@@ -1,0 +1,12 @@
+---
+layout: taxonomy.njk
+pagination:
+  data: taxonomies.scenes
+  size: 1
+  alias: term
+  addAllPagesToCollections: false
+permalink: "/scenes/{{ term.slug }}/"
+kind: scene
+eleventyComputed:
+  title: "{{ term.name }}"
+---

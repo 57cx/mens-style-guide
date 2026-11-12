@@ -1,0 +1,76 @@
+sections:
+  - slug: basics
+    name: 基础原理
+    blurb: 版型、比例、尺码、面料和基本单品。先让高瘦的骨架有分量。
+  - slug: color
+    name: 配色
+    blurb: 哪些颜色让偏黄的肤色干净，哪些会把脸推得更黄。
+  - slug: styles
+    name: 风格专题
+    blurb: 日系、美式复古、通勤、极简、街头、运动机能，各抓核心单品。
+  - slug: scenes
+    name: 场景穿搭
+    blurb: 上班、约会、出游、运动、正式。先把眼下的秋冬穿明白。
+  - slug: closet
+    name: 衣橱建设
+    blurb: 胶囊清单、预算分层，以及手头衣服怎么换着穿。
+  - slug: details
+    name: 细节
+    blurb: 鞋、包、手表、眼镜、发型和卷裤脚这类小动作。
+
+styles:
+  - slug: japanese
+    name: 日系
+    blurb: 宽松留在衣身，肩线别掉下去。层次要轻。
+  - slug: amekaji
+    name: 美式复古
+    blurb: 丹宁、法兰绒、工装。硬挺面料正好补上偏瘦的胸口。
+  - slug: smart
+    name: 通勤商务休闲
+    blurb: 不一定套装，但肩线和衣长必须像去上班。
+  - slug: minimal
+    name: 极简
+    blurb: 颜色少、轮廓干净，把 181 的身高收成一条线。
+  - slug: street
+    name: 街头
+    blurb: 可以松，不要用超大号把肩宽穿没。
+  - slug: techwear
+    name: 运动机能
+    blurb: 软壳、锥形裤、跑鞋。功能先满足，比例仍按衣架来。
+
+scenes:
+  - slug: work
+    name: 上班
+    blurb: 能坐一天，进会议室也不突兀。
+  - slug: date
+    name: 约会
+    blurb: 暖和、干净，靠近脸的颜色要照顾黄皮。
+  - slug: travel
+    name: 出游
+    blurb: 走路多。鞋子和裤脚先舒服，再谈样子。
+  - slug: sport
+    name: 运动
+    blurb: 健身房和户外分开，别穿紧身去证明自己瘦。
+  - slug: formal
+    name: 正式
+    blurb: 婚礼、年会、见家长。藏青比纯黑更不压肤色。
+
+seasons:
+  - slug: aw
+    name: 秋冬
+    blurb: 现在这个季节。外套长度和叠穿是主角。
+  - slug: autumn
+    name: 秋
+    blurb: 还没冷透，夹克和针织就够。
+  - slug: winter
+    name: 冬
+    blurb: 大衣、羽绒、围巾。加厚，但别加成球。
+  - slug: spring
+    name: 春
+    blurb: 薄外套和衬衫。逻辑与秋冬相同，层数减少。
+  - slug: summer
+    name: 夏
+    blurb: 短袖也要看肩线和裤管，不要贴身。
+  - slug: ss
+    name: 春夏
+    blurb: 把秋冬那套比例换成轻薄面料。

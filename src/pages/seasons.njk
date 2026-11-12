@@ -1,0 +1,12 @@
+---
+layout: taxonomy.njk
+pagination:
+  data: taxonomies.seasons
+  size: 1
+  alias: term
+  addAllPagesToCollections: false
+permalink: "/seasons/{{ term.slug }}/"
+kind: season
+eleventyComputed:
+  title: "{{ term.name }}"
+---

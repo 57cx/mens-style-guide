@@ -1,0 +1,62 @@
+name: 提交搭配
+description: 把一套搭配收进网站，所有设备都能看到
+title: "搭配: "
+labels: ["提交搭配"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        照片请直接拖进「照片」那一栏，让它变成 GitHub 图片。外链图片不会被收下。
+        单品一行一件，用竖线分开，例如：`羊毛大衣 | 藏青 | 过臀直筒`。
+  - type: dropdown
+    id: scene
+    attributes:
+      label: 场景
+      options: [上班, 约会, 出游, 运动, 正式]
+    validations:
+      required: true
+  - type: dropdown
+    id: style
+    attributes:
+      label: 风格
+      options: [日系, 美式复古, 通勤商务休闲, 极简, 街头, 运动机能]
+    validations:
+      required: true
+  - type: dropdown
+    id: season
+    attributes:
+      label: 季节
+      options: [秋冬, 秋, 冬, 春, 夏, 春夏]
+    validations:
+      required: true
+  - type: input
+    id: colors
+    attributes:
+      label: 颜色
+      placeholder: 藏青、燕麦、棕
+    validations:
+      required: true
+  - type: textarea
+    id: items
+    attributes:
+      label: 单品
+      description: 一行一件。格式是「单品 | 颜色 | 版型」。
+      placeholder: |
+        羊毛大衣 | 藏青 | 过臀，肩线合肩
+        高领针织 | 燕麦 | 中厚
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: 为什么适合
+      description: 写给 181cm、72kg、偏黄肤色的人，点明身高、体重或肤色。
+    validations:
+      required: true
+  - type: textarea
+    id: photos
+    attributes:
+      label: 照片
+      description: 把 1 到 4 张照片拖到这里。
+    validations:
+      required: true

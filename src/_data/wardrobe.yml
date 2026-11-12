@@ -1,0 +1,102 @@
+status: example
+title: 示例胶囊
+note: 这是按 181cm、72kg、偏黄肤色、秋冬场景写的示例，不是你的真实衣橱。换成自己的衣服时，改这一份 src/_data/wardrobe.yml，并删掉或改掉「示例」标记。
+pieces:
+  - id: ex-coat
+    name: 藏青羊毛大衣
+    category: 外套
+    color: 藏青
+    fit: 过臀到膝上，肩缝落在肩骨
+    seasons: [秋, 冬]
+    tier: 中档
+  - id: ex-denim
+    name: 靛蓝丹宁夹克
+    category: 外套
+    color: 靛蓝
+    fit: 衣摆盖过腰袋，肩只松一指
+    seasons: [秋]
+    tier: 平价
+  - id: ex-down
+    name: 橄榄中长羽绒
+    category: 外套
+    color: 橄榄绿
+    fit: 直筒过臀，不是短泡芙
+    seasons: [冬]
+    tier: 中档
+  - id: ex-turtleneck
+    name: 燕麦高领
+    category: 上装
+    color: 燕麦
+    fit: 中厚，腰侧能进一拳
+    seasons: [秋, 冬]
+    tier: 平价
+  - id: ex-shirt
+    name: 奶白衬衫
+    category: 上装
+    color: 奶白
+    fit: 领可被外套压住，袖长到腕骨
+    seasons: [秋, 冬, 春]
+    tier: 平价
+  - id: ex-flannel
+    name: 浅卡其法兰绒衬衫
+    category: 上装
+    color: 浅卡其
+    fit: 可塞进裤子，格子偏暖不偏亮黄
+    seasons: [秋]
+    tier: 平价
+  - id: ex-wine
+    name: 酒红薄针织
+    category: 上装
+    color: 酒红
+    fit: 只做一件点缀，不要再配酒红裤
+    seasons: [秋, 冬]
+    tier: 平价
+  - id: ex-chino
+    name: 深卡其直筒裤
+    category: 裤装
+    color: 卡其
+    fit: 直筒，裤长配靴面
+    seasons: [秋, 冬]
+    tier: 平价
+  - id: ex-jeans
+    name: 靛蓝直筒牛仔裤
+    category: 裤装
+    color: 靛蓝
+    fit: 大腿有余量，不要浅漂
+    seasons: [秋, 冬, 春]
+    tier: 平价
+  - id: ex-black-trouser
+    name: 黑直筒西裤
+    category: 裤装
+    color: 黑
+    fit: 不修身，正式场合用
+    seasons: [秋, 冬]
+    tier: 中档
+  - id: ex-chelsea
+    name: 棕切尔西靴
+    category: 鞋
+    color: 棕
+    fit: 圆头，靴筒到踝上一点
+    seasons: [秋, 冬]
+    tier: 中档
+  - id: ex-sneaker
+    name: 白运动鞋
+    category: 鞋
+    color: 白
+    fit: 低帮，鞋型简单
+    seasons: [秋, 春]
+    tier: 平价
+  - id: ex-oxford
+    name: 黑牛津鞋
+    category: 鞋
+    color: 黑
+    fit: 圆头，配西装
+    seasons: [秋, 冬, 春]
+    tier: 中档
+  - id: ex-scarf
+    name: 燕麦围巾
+    category: 配饰
+    color: 燕麦
+    fit: 薄，绕一圈即可，不把脖子堆厚
+    seasons: [冬]
+    tier: 平价

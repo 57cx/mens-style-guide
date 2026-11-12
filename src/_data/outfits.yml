@@ -1,0 +1,624 @@
+- id: ow-01
+  title: 藏青大衣通勤
+  scene: 上班
+  style: 通勤商务休闲
+  season: 秋冬
+  colors: [藏青, 燕麦, 卡其, 棕]
+  why: 181 的身高靠过臀大衣连成一条线，72kg 的薄胸口用合肩的厚大衣补上；藏青不贴脸，黄皮不会被染黄。
+  source: 本站自绘 SVG
+  image: /assets/images/outfits/ow-01.svg
+  items:
+    - type: overcoat
+      name: 羊毛大衣
+      color: 藏青
+      fit: 过臀到膝上，肩缝在肩骨
+    - type: turtleneck
+      name: 高领针织
+      color: 燕麦
+      fit: 中厚，腰侧进一拳
+    - type: trousers
+      name: 直筒西裤
+      color: 卡其
+      fit: 直筒，裤长轻碰靴面
+    - type: chelsea
+      name: 切尔西靴
+      color: 棕
+      fit: 圆头，靴筒到踝
+- id: ow-02
+  title: 驼色西装上班
+  scene: 上班
+  style: 通勤商务休闲
+  season: 秋冬
+  colors: [驼, 奶白, 藏青, 深棕]
+  why: 驼色西装给 181 的肩一个清楚的横线，72kg 不要再买宽一号；奶白衬衫比死白更不显黄皮。
+  source: 本站自绘 SVG
+  image: /assets/images/outfits/ow-02.svg
+  items:
+    - type: blazer
+      name: 西装外套
+      color: 驼
+      fit: 两粒扣，衣摆盖住臀上沿
+    - type: shirt
+      name: 衬衫
+      color: 奶白
+      fit: 领被外套压住，袖口长出一指
+    - type: trousers
+      name: 西裤
+      color: 藏青
+      fit: 直筒，前片不绷
+    - type: oxford
+      name: 牛津鞋
+      color: 深棕
+      fit: 圆头或半方头
+- id: ow-03
+  title: 燕麦同色长大衣
+  scene: 上班
+  style: 极简
+  season: 秋冬
+  colors: [燕麦, 米白, 棕]
+  why: 同色把 181 收成一条线，棕色鞋压住下摆，人不会飘；燕麦贴脸，黄皮比穿纯白干净。
+  source: 本站自绘 SVG
+  image: /assets/images/outfits/ow-03.svg
+  items:
+    - type: overcoat
+      name: 长大衣
+      color: 燕麦
+      fit: 过膝，肩线合肩
+    - type: turtleneck
+      name: 薄高领
+      color: 米白
+      fit: 贴颈不紧
+    - type: trousers
+      name: 直筒裤
+      color: 燕麦
+      fit: 与大衣同色，不修身
+    - type: loafer
+      name: 乐福鞋
+      color: 棕
+      fit: 低跟
+- id: ow-04
+  title: 针织背心叠衬衫
+  scene: 上班
+  style: 日系
+  season: 秋
+  colors: [浅卡其, 藏青, 卡其, 棕]
+  why: 日系的松留在衣身，肩仍在 181 的肩骨上；浅卡其靠近脸，黄皮不会被亮黄格子打脏，72kg 用背心补一层厚度。
+  source: 本站自绘 SVG
+  image: /assets/images/outfits/ow-04.svg
+  items:
+    - type: shirt
+      name: 衬衫
+      color: 浅卡其
+      fit: 可塞衣角，肩只松一指
+    - type: sweater-vest
+      name: 针织背心
+      color: 藏青
+      fit: V 领，衣摆盖住腰带
+    - type: chinos
+      name: 休闲裤
+      color: 卡其
+      fit: 直筒偏宽一点
+    - type: loafer
+      name: 乐福鞋
+      color: 棕
+      fit: 低跟
+- id: ow-05
+  title: 酒红内搭配燕麦大衣
+  scene: 约会
+  style: 通勤商务休闲
+  season: 秋冬
+  colors: [燕麦, 酒红, 黑, 棕]
+  why: 酒红只做内搭，给黄皮一点气色，又不会把 181 的全身吃掉；大衣过臀，72kg 不用紧身来显得精神。
+  source: 本站自绘 SVG
+  image: /assets/images/outfits/ow-05.svg
+  items:
+    - type: overcoat
+      name: 羊毛大衣
+      color: 燕麦
+      fit: 过臀，肩缝合肩
+    - type: crewneck
+      name: 薄针织
+      color: 酒红
+      fit: 中薄，只此一件深色
+    - type: trousers
+      name: 直筒裤
+      color: 黑
+      fit: 直筒，不贴小腿
+    - type: chelsea
+      name: 切尔西靴
+      color: 棕
+      fit: 圆头
+- id: ow-06
+  title: 奶白针织加深蓝夹克
+  scene: 约会
+  style: 极简
+  season: 秋冬
+  colors: [藏青, 奶白, 卡其, 白]
+  why: 夹克的肩线保住 181 的肩宽，奶白领口让黄皮显干净；卡其直筒给 72kg 的腿留一点空气。
+  source: 本站自绘 SVG
+  image: /assets/images/outfits/ow-06.svg
+  items:
+    - type: jacket
+      name: 羊毛夹克
+      color: 藏青
+      fit: 衣摆盖臀，肩不滑落
+    - type: turtleneck
+      name: 薄高领
+      color: 奶白
+      fit: 贴颈，不堆厚
+    - type: chinos
+      name: 直筒裤
+      color: 卡其
+      fit: 直筒
+    - type: sneaker
+      name: 白鞋
+      color: 白
+      fit: 低帮，鞋型简单
+- id: ow-07
+  title: 皮夹克与燕麦高领
+  scene: 约会
+  style: 街头
+  season: 秋冬
+  colors: [黑, 燕麦, 靛蓝]
+  why: 皮衣有硬度，能把 72kg 的薄胸口撑起来，但衣摆仍要过腰；燕麦高领隔在黑和黄皮之间，181 的腿用直筒牛仔而不是紧身。
+  source: 本站自绘 SVG
+  image: /assets/images/outfits/ow-07.svg
+  items:
+    - type: rider
+      name: 皮夹克
+      color: 黑
+      fit: 腰长，肩只松一点点
+    - type: turtleneck
+      name: 高领
+      color: 燕麦
+      fit: 中厚
+    - type: jeans
+      name: 直筒牛仔裤
+      color: 靛蓝
+      fit: 深色，大腿有余量
+    - type: boot
+      name: 短靴
+      color: 黑
+      fit: 靴筒接住裤脚
+- id: ow-08
+  title: 驼大衣配橄榄衬衫
+  scene: 约会
+  style: 日系
+  season: 秋冬
+  colors: [驼, 橄榄绿, 米白, 棕]
+  why: 橄榄要偏暖、带一点棕，才不会把黄皮衬青；驼大衣的长度盖住 181 的臀，米白裤子不贴 72kg 的腿。
+  source: 本站自绘 SVG
+  image: /assets/images/outfits/ow-08.svg
+  items:
+    - type: overcoat
+      name: 大衣
+      color: 驼
+      fit: 过臀，直筒
+    - type: shirt
+      name: 衬衫
+      color: 橄榄绿
+      fit: 可塞衣角，颜色偏棕不偏灰
+    - type: trousers
+      name: 直筒裤
+      color: 米白
+      fit: 直筒，不九分
+    - type: boot
+      name: 短靴
+      color: 棕
+      fit: 圆头
+- id: ow-09
+  title: 丹宁夹克与法兰绒
+  scene: 出游
+  style: 美式复古
+  season: 秋冬
+  colors: [靛蓝, 浅卡其, 白]
+  why: 丹宁的硬挺补上 72kg 的胸口，衣摆盖过腰才配得上 181；浅卡其格纹偏暖，日光下也不把黄皮打脏。
+  source: 本站自绘 SVG
+  image: /assets/images/outfits/ow-09.svg
+  items:
+    - type: denim-jacket
+      name: 丹宁夹克
+      color: 靛蓝
+      fit: 盖过腰袋，肩不夸张
+    - type: flannel
+      name: 法兰绒衬衫
+      color: 浅卡其
+      fit: 可塞或不塞，格子不带亮黄
+    - type: jeans
+      name: 直筒牛仔裤
+      color: 靛蓝
+      fit: 深色，裤脚盖鞋舌一点
+    - type: sneaker
+      name: 白运动鞋
+      color: 白
+      fit: 低帮
+- id: ow-10
+  title: 连帽外套与卫衣
+  scene: 出游
+  style: 街头
+  season: 秋冬
+  colors: [藏青, 燕麦, 卡其, 白]
+  why: 卫衣可以松，肩不能掉，否则 181 的肩宽没了；燕麦帽衫靠近脸，黄皮比荧光卫衣干净，卡其裤给 72kg 留余量。
+  source: 本站自绘 SVG
+  image: /assets/images/outfits/ow-10.svg
+  items:
+    - type: jacket
+      name: 连帽外套
+      color: 藏青
+      fit: 过臀，肩线还在
+    - type: hoodie
+      name: 卫衣
+      color: 燕麦
+      fit: 衣身松一拳，不超大
+    - type: chinos
+      name: 锥形休闲裤
+      color: 卡其
+      fit: 大腿松、脚口收一点
+    - type: sneaker
+      name: 运动鞋
+      color: 白
+      fit: 能走一天
+- id: ow-11
+  title: 橄榄中长羽绒
+  scene: 出游
+  style: 运动机能
+  season: 冬
+  colors: [橄榄绿, 燕麦, 黑, 白]
+  why: 短羽绒会切在 181 最细的腰上，中长直筒才有分量；橄榄偏暖，不把黄皮衬青，内搭燕麦隔开黑色。
+  source: 本站自绘 SVG
+  image: /assets/images/outfits/ow-11.svg
+  items:
+    - type: down-jacket
+      name: 羽绒
+      color: 橄榄绿
+      fit: 过臀，直筒，不是泡芙
+    - type: turtleneck
+      name: 高领
+      color: 燕麦
+      fit: 薄，塞进裤腰
+    - type: sweatpants
+      name: 锥形裤
+      color: 黑
+      fit: 大腿不贴，脚口收
+    - type: sneaker
+      name: 运动鞋
+      color: 白
+      fit: 低帮
+- id: ow-12
+  title: 卡其工装夹克
+  scene: 出游
+  style: 美式复古
+  season: 秋
+  colors: [卡其, 奶白, 棕]
+  why: 工装的口袋和硬布给 72kg 加形状，衣摆仍盖过腰，才撑得起 181；奶白 T 恤贴脸，比卡其再浅一档，黄皮不闷。
+  source: 本站自绘 SVG
+  image: /assets/images/outfits/ow-12.svg
+  items:
+    - type: field-jacket
+      name: 工装夹克
+      color: 卡其
+      fit: 四袋，衣长过腰
+    - type: tee
+      name: T 恤
+      color: 奶白
+      fit: 肩缝在肩上，不宽大
+    - type: chinos
+      name: 工装裤
+      color: 卡其
+      fit: 直筒
+    - type: boot
+      name: 工装靴
+      color: 棕
+      fit: 靴筒接裤脚
+- id: ow-13
+  title: 黑软壳配锥形裤
+  scene: 运动
+  style: 运动机能
+  season: 秋冬
+  colors: [黑, 燕麦, 白]
+  why: 软壳过臀，不把 181 切成两截；锥形裤只在脚踝收，72kg 的大腿仍留空，燕麦内搭让黄皮不贴着纯黑。
+  source: 本站自绘 SVG
+  image: /assets/images/outfits/ow-13.svg
+  items:
+    - type: jacket
+      name: 软壳
+      color: 黑
+      fit: 过臀，肩线合肩
+    - type: tee
+      name: 速干 T
+      color: 燕麦
+      fit: 合身但不紧
+    - type: sweatpants
+      name: 锥形运动裤
+      color: 黑
+      fit: 大腿松，脚口收
+    - type: sneaker
+      name: 跑鞋
+      color: 白
+      fit: 日常训练
+- id: ow-14
+  title: 藏青连帽卫衣
+  scene: 运动
+  style: 街头
+  season: 秋
+  colors: [藏青, 卡其, 白]
+  why: 藏青卫衣不荧光，黄皮在室外也不脏；衣身只松一拳，肩还在，181 不会被超大号淹没，卡其裤不贴 72kg 的腿。
+  source: 本站自绘 SVG
+  image: /assets/images/outfits/ow-14.svg
+  items:
+    - type: hoodie
+      name: 连帽卫衣
+      color: 藏青
+      fit: 正常肩线，略松
+    - type: sweatpants
+      name: 运动裤
+      color: 卡其
+      fit: 直筒，不紧身
+    - type: sneaker
+      name: 白鞋
+      color: 白
+      fit: 低帮
+- id: ow-15
+  title: 橄榄抓绒
+  scene: 运动
+  style: 运动机能
+  season: 秋
+  colors: [橄榄绿, 燕麦, 黑, 白]
+  why: 抓绒选偏棕的橄榄，不选发灰的绿，黄皮才不发青；拉链可以打开透气，长度仍过腰，细的 181 不至于被短身切断。
+  source: 本站自绘 SVG
+  image: /assets/images/outfits/ow-15.svg
+  items:
+    - type: fleece
+      name: 抓绒
+      color: 橄榄绿
+      fit: 过腰，肩合身
+    - type: tee
+      name: 内搭
+      color: 燕麦
+      fit: 圆领，不紧
+    - type: sweatpants
+      name: 运动裤
+      color: 黑
+      fit: 直筒
+    - type: sneaker
+      name: 跑鞋
+      color: 白
+      fit: 低帮
+- id: ow-16
+  title: 黑羽绒马甲叠卫衣
+  scene: 运动
+  style: 运动机能
+  season: 冬
+  colors: [黑, 燕麦, 藏青, 白]
+  why: 马甲自己没有袖，肩宽交给里面的卫衣，181 的肩线不能滑；燕麦在领口，黄皮不直接撞黑马甲，裤管仍给 72kg 留空。
+  source: 本站自绘 SVG
+  image: /assets/images/outfits/ow-16.svg
+  items:
+    - type: vest
+      name: 羽绒马甲
+      color: 黑
+      fit: 过腰，不要短到肚脐
+    - type: hoodie
+      name: 卫衣
+      color: 燕麦
+      fit: 肩线在肩骨
+    - type: sweatpants
+      name: 运动裤
+      color: 藏青
+      fit: 锥形，不紧身
+    - type: sneaker
+      name: 运动鞋
+      color: 白
+      fit: 低帮
+- id: ow-17
+  title: 藏青西装与奶白衬衫
+  scene: 正式
+  style: 通勤商务休闲
+  season: 秋冬
+  colors: [藏青, 奶白, 黑]
+  why: 藏青上下连成一条，181 的高度变成优势；奶白衬衫比死白照顾黄皮，72kg 选合肩的最小号，不为胸围放大。
+  source: 本站自绘 SVG
+  image: /assets/images/outfits/ow-17.svg
+  items:
+    - type: blazer
+      name: 西装外套
+      color: 藏青
+      fit: 两粒扣，盖住臀上沿
+    - type: shirt
+      name: 衬衫
+      color: 奶白
+      fit: 袖口长出一指
+    - type: trousers
+      name: 西裤
+      color: 藏青
+      fit: 直筒，有裤线
+    - type: oxford
+      name: 牛津鞋
+      color: 黑
+      fit: 圆头
+- id: ow-18
+  title: 深棕西装
+  scene: 正式
+  style: 极简
+  season: 秋冬
+  colors: [深棕, 奶白, 棕]
+  why: 深棕比纯黑暖，和黄皮同一温度；套装把 181 收成一条，裤管不修身，72kg 的腿不会被描成线。
+  source: 本站自绘 SVG
+  image: /assets/images/outfits/ow-18.svg
+  items:
+    - type: blazer
+      name: 西装外套
+      color: 深棕
+      fit: 合肩，衣摆盖臀
+    - type: shirt
+      name: 衬衫
+      color: 奶白
+      fit: 领尖整齐
+    - type: trousers
+      name: 西裤
+      color: 深棕
+      fit: 与外套同色，直筒
+    - type: oxford
+      name: 牛津鞋
+      color: 棕
+      fit: 与西装同温度
+- id: ow-19
+  title: 黑西装配燕麦衬衫
+  scene: 正式
+  style: 通勤商务休闲
+  season: 冬
+  colors: [黑, 燕麦]
+  why: 黑可以压住场合，但领口换成燕麦，黄皮才不被黑和死白夹黄；肩线仍按 181 来，不要买宽肩垫把 72kg 的肩撑空。
+  source: 本站自绘 SVG
+  image: /assets/images/outfits/ow-19.svg
+  items:
+    - type: blazer
+      name: 西装外套
+      color: 黑
+      fit: 薄垫肩或无垫，合肩
+    - type: shirt
+      name: 衬衫
+      color: 燕麦
+      fit: 不透明，领口干净
+    - type: trousers
+      name: 西裤
+      color: 黑
+      fit: 直筒
+    - type: oxford
+      name: 牛津鞋
+      color: 黑
+      fit: 圆头
+- id: ow-20
+  title: 藏青西装加一条酒红领带
+  scene: 正式
+  style: 通勤商务休闲
+  season: 秋冬
+  colors: [藏青, 白, 酒红, 黑]
+  why: 酒红只出现在领带上，给黄皮一点颜色，不染满全身；181 仍靠合肩的藏青套装站稳，72kg 不把衬衫绷在胸口。
+  source: 本站自绘 SVG
+  image: /assets/images/outfits/ow-20.svg
+  items:
+    - type: blazer
+      name: 西装外套
+      color: 藏青
+      fit: 扣上第一颗不放射状皱
+    - type: shirt
+      name: 衬衫
+      color: 白
+      fit: 领够高，能托住领带
+    - type: tie
+      name: 领带
+      color: 酒红
+      fit: 常规宽度，不夸张
+    - type: trousers
+      name: 西裤
+      color: 藏青
+      fit: 直筒
+    - type: oxford
+      name: 牛津鞋
+      color: 黑
+      fit: 圆头
+- id: ow-21
+  title: 宽松衬衫与针织背心
+  scene: 约会
+  style: 日系
+  season: 秋
+  colors: [燕麦, 藏青, 卡其, 棕]
+  why: 衬衫可以宽，肩线只松一指，181 的肩还在；藏青背心压住薄的 72kg，燕麦贴脸，黄皮比白色衬衫柔和。
+  source: 本站自绘 SVG
+  image: /assets/images/outfits/ow-21.svg
+  items:
+    - type: shirt
+      name: 衬衫
+      color: 燕麦
+      fit: 衣身松，肩几乎合
+    - type: sweater-vest
+      name: 针织背心
+      color: 藏青
+      fit: 盖住塞进裤腰的衬衫
+    - type: trousers
+      name: 宽直筒裤
+      color: 卡其
+      fit: 直筒，不垂到鞋面太深
+    - type: loafer
+      name: 乐福鞋
+      color: 棕
+      fit: 低跟
+- id: ow-22
+  title: 牛仔夹克叠卫衣
+  scene: 出游
+  style: 街头
+  season: 秋冬
+  colors: [靛蓝, 燕麦, 白]
+  why: 两层都松一点就够，再大就会把 181 的肩穿没；燕麦卫衣挡在牛仔和黄皮之间，直筒裤让 72kg 的腿有体积。
+  source: 本站自绘 SVG
+  image: /assets/images/outfits/ow-22.svg
+  items:
+    - type: denim-jacket
+      name: 牛仔夹克
+      color: 靛蓝
+      fit: 盖腰，肩线清楚
+    - type: hoodie
+      name: 卫衣
+      color: 燕麦
+      fit: 不超大
+    - type: jeans
+      name: 直筒牛仔裤
+      color: 靛蓝
+      fit: 深色，不浅漂
+    - type: sneaker
+      name: 运动鞋
+      color: 白
+      fit: 低帮
+- id: ow-23
+  title: 炭灰大衣与燕麦高领
+  scene: 上班
+  style: 极简
+  season: 冬
+  colors: [炭灰, 燕麦, 黑]
+  why: 炭灰大衣不要贴脸，脸旁边留燕麦，黄皮才不会被灰吃掉；过膝长度把 181 的细腿挡住一截，裤管仍给 72kg 留空。
+  source: 本站自绘 SVG
+  image: /assets/images/outfits/ow-23.svg
+  items:
+    - type: overcoat
+      name: 长大衣
+      color: 炭灰
+      fit: 过膝，肩缝合肩
+    - type: turtleneck
+      name: 高领
+      color: 燕麦
+      fit: 中厚，露出一截领
+    - type: trousers
+      name: 直筒裤
+      color: 黑
+      fit: 不修身
+    - type: chelsea
+      name: 切尔西靴
+      color: 黑
+      fit: 圆头
+- id: ow-24
+  title: 法兰绒衬衫与工装靴
+  scene: 出游
+  style: 美式复古
+  season: 秋冬
+  colors: [浅卡其, 白, 靛蓝, 棕]
+  why: 法兰绒的厚度补上 72kg，格子用浅卡其而不是亮黄，黄皮在白天不出脏；靴筒接住直筒裤，181 的腿是一根柱子。
+  source: 本站自绘 SVG
+  image: /assets/images/outfits/ow-24.svg
+  items:
+    - type: flannel
+      name: 法兰绒衬衫
+      color: 浅卡其
+      fit: 可敞开，内搭白 T
+    - type: tee
+      name: T 恤
+      color: 白
+      fit: 领口干净
+    - type: jeans
+      name: 直筒牛仔裤
+      color: 靛蓝
+      fit: 深色，裤脚盖靴口一点
+    - type: boot
+      name: 工装靴
+      color: 棕
+      fit: 圆头，能走

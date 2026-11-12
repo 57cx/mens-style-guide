@@ -1,0 +1,93 @@
+---
+layout: base.njk
+permalink: /wardrobe/upload/
+title: 上传我的搭配
+bodyPage: upload
+---
+<div class="wrap-narrow">
+  <header class="page-head">
+    <p class="kicker">没有服务器，照片先留在手机或电脑里</p>
+    <h1>上传我的搭配</h1>
+    <p class="lede">选照片、写上单品和标签，保存后只存在这台设备。回到衣橱页就能跟推荐搭配一起筛选。换浏览器或清缓存会丢，所以请顺手导出一份。</p>
+  </header>
+
+  <form class="form" id="outfit-form">
+    <label><span>标题</span><input name="title" type="text" required maxlength="40" placeholder="例如：周五的藏青大衣"></label>
+    <div>
+      <span class="hint">照片，1 到 4 张。手机会先压缩再保存。</span>
+      <label class="btn secondary" for="photos">选择照片</label>
+      <input id="photos" name="photos" type="file" accept="image/*" multiple required hidden>
+      <p class="hint" id="photo-names">还没有选择照片</p>
+    </div>
+    <label><span>场景</span>
+      <select name="scene" required>
+        {% for item in taxonomies.scenes %}<option>{{ item.name }}</option>{% endfor %}
+      </select>
+    </label>
+    <label><span>风格</span>
+      <select name="style" required>
+        {% for item in taxonomies.styles %}<option>{{ item.name }}</option>{% endfor %}
+      </select>
+    </label>
+    <label><span>季节</span>
+      <select name="season" required>
+        {% for item in taxonomies.seasons %}<option>{{ item.name }}</option>{% endfor %}
+      </select>
+    </label>
+    <label><span>颜色，用顿号分开</span><input name="colors" type="text" required placeholder="藏青、燕麦、棕"></label>
+    <fieldset>
+      <legend>单品</legend>
+      <div id="item-rows">
+        <div class="item-row">
+          <input type="text" name="item-name" placeholder="单品，如羊毛大衣" required>
+          <input type="text" name="item-color" placeholder="颜色">
+          <input type="text" name="item-fit" placeholder="版型，如过臀直筒">
+        </div>
+      </div>
+      <p><button type="button" class="btn secondary small" id="add-item">再加一件</button></p>
+    </fieldset>
+    <label><span>为什么适合 181cm / 72kg / 黄皮</span>
+      <textarea name="why" required placeholder="写一句就行，要提到身高、体重或肤色。"></textarea>
+    </label>
+    <button class="btn" type="submit">保存到这台设备</button>
+    <p class="hint" id="form-status" role="status"></p>
+  </form>
+
+  <h2>已经存在这台设备上的</h2>
+  <div class="local-tools">
+    <button type="button" class="btn secondary small" id="export-json">导出 JSON</button>
+    <label class="btn secondary small" for="import-json">导入 JSON
+      <input id="import-json" type="file" accept="application/json,.json" hidden>
+    </label>
+  </div>
+  <div class="outfit-grid" id="local-list"></div>
+  <template id="local-card">
+    <article class="card outfit-card" data-origin="local">
+      <img alt="">
+      <div class="body">
+        <span class="badge local">仅本机</span>
+        <h3></h3>
+        <ul class="tag-list"></ul>
+        <p class="why"></p>
+        <ul class="items"></ul>
+        <p class="caption">图：保存在这台设备上的照片，尚未发布到网站。</p>
+        <div class="thumb-row"></div>
+        <p><button type="button" class="btn danger small" data-delete>删除这套</button></p>
+      </div>
+    </article>
+  </template>
+
+  <section class="section">
+    <h2>想让所有设备都能打开</h2>
+    <p>网站是静态的，上传本身不会自动上网。要变成大家都能看到的一页，用下面任意一种办法，把文件放进仓库的 main 分支。</p>
+    <ol class="steps">
+      <li>在这一页点「导出 JSON」。文件里已经带上压缩后的照片。</li>
+      <li>在电脑上，仓库目录里运行 <code>npm run import-outfit -- 你的文件.json</code>。它会写成 <code>src/outfits/某套搭配/outfit.yml</code> 和同目录的照片。</li>
+      <li>把这些新文件提交并推到 main。GitHub Actions 会重新发布网站。</li>
+    </ol>
+    <p>没有电脑时，用手机开一个议题也可以。选模板「提交搭配」，把照片拖进「照片」那一栏，填场景和单品。仓库里的 Action 会尝试下载照片、写成同样的文件夹并提交到 main。照片必须拖进正文，变成 GitHub 自己的图片链接，外链图片不会被收下。</p>
+    <p><a href="{{ site.repo }}/issues/new?template=submit-outfit.yml">打开「提交搭配」议题</a></p>
+    <p class="hint">若 Action 下不了照片，它会在议题里说明。这时仍用导出的 JSON，或自己建 <code>src/outfits/你的id/outfit.yml</code>，照片放在同一文件夹，文件名叫 <code>photo.jpg</code>，提交到 main。</p>
+  </section>
+</div>
+<script src="{{ '/assets/js/wardrobe.js' | url }}" defer></script>

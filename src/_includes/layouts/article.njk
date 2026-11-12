@@ -1,0 +1,30 @@
+---
+layout: base.njk
+---
+<article class="wrap-narrow prose">
+  <header class="page-head">
+    <p class="kicker">
+      {% if day %}第 {{ day }} 天 · {% endif %}{{ section }}
+      {% if seasons %} · {{ seasons | join(" / ") }}{% endif %}
+    </p>
+    <h1>{{ title }}</h1>
+    <p class="meta">{{ page.date | dateZh }} · 大约 {{ minutes or 8 }} 分钟</p>
+  </header>
+  {{ content | safe }}
+  <aside class="section">
+    <h2>去衣橱看现成搭配</h2>
+    <div class="outfit-grid">
+      {% for outfit in allOutfits.seed %}
+      {% if loop.index0 < 3 %}
+      <a class="card outfit-card" href="{{ '/wardrobe/' | url }}#outfit-{{ outfit.id }}">
+        <img src="{{ outfit.image | url }}" alt="{{ outfit.title }}的单品图">
+        <div class="body">
+          <h3>{{ outfit.title }}</h3>
+          <p class="why">{{ outfit.why }}</p>
+        </div>
+      </a>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </aside>
+</article>

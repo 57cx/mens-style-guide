@@ -1,0 +1,109 @@
+---
+layout: base.njk
+permalink: /wardrobe/
+title: 我的衣橱
+bodyPage: wardrobe
+---
+<div class="wrap">
+  <header class="page-head">
+    <p class="kicker">搭配图鉴 · 秋冬优先</p>
+    <h1>我的衣橱</h1>
+    <p class="lede">下面是按 181cm、72kg、偏黄肤色画的推荐搭配，可以按场景、风格、季节和颜色筛选。你在「上传搭配」里存下的照片只留在这台设备上，会和推荐图排在一起，带「仅本机」标记。</p>
+    <p><a class="btn" href="{{ '/wardrobe/upload/' | url }}">上传我的搭配</a></p>
+  </header>
+
+  <div class="filters" id="filters">
+    <div class="filter-line" data-key="scene">
+      <span>场景</span>
+      {% for item in taxonomies.scenes %}
+      <button type="button" data-value="{{ item.name }}">{{ item.name }}</button>
+      {% endfor %}
+    </div>
+    <div class="filter-line" data-key="style">
+      <span>风格</span>
+      {% for item in taxonomies.styles %}
+      <button type="button" data-value="{{ item.name }}">{{ item.name }}</button>
+      {% endfor %}
+    </div>
+    <div class="filter-line" data-key="season">
+      <span>季节</span>
+      {% for item in taxonomies.seasons %}
+      <button type="button" data-value="{{ item.name }}">{{ item.name }}</button>
+      {% endfor %}
+    </div>
+    <div class="filter-line" data-key="color">
+      <span>颜色</span>
+      {% for color in allOutfits.colors %}
+      <button type="button" data-value="{{ color }}">{{ color }}</button>
+      {% endfor %}
+    </div>
+  </div>
+  <p class="meta" id="visible-count"></p>
+  <div class="outfit-grid" id="outfit-grid">
+    {% for outfit in allOutfits.all %}
+    <article class="card outfit-card" id="outfit-{{ outfit.id }}" data-origin="{{ outfit.origin }}" data-scene="{{ outfit.scene }}" data-style="{{ outfit.style }}" data-season="{{ outfit.season }}" data-colors="{{ outfit.colors | join(',') }}">
+      {% if outfit.image %}
+      <img src="{{ outfit.image | url }}" alt="{{ outfit.title }}的单品图">
+      {% endif %}
+      <div class="body">
+        {% if outfit.origin == "user" %}<span class="badge">已收入站点</span>{% else %}<span class="badge">推荐</span>{% endif %}
+        <h3>{{ outfit.title }}</h3>
+        <ul class="tag-list">
+          <li>{{ outfit.scene }}</li>
+          <li>{{ outfit.style }}</li>
+          <li>{{ outfit.season }}</li>
+          {% for color in outfit.colors %}<li>{{ color }}</li>{% endfor %}
+        </ul>
+        <p class="why">{{ outfit.why }}</p>
+        <ul class="items">
+          {% for item in outfit.items %}
+          <li>{{ item.name }} · {{ item.color }} · {{ item.fit }}</li>
+          {% endfor %}
+        </ul>
+        <p class="caption">图：{{ outfit.source }}</p>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+
+  <section class="section" id="pieces">
+    <h2>{{ wardrobe.title }}</h2>
+    {% if wardrobe.status == "example" %}
+    <div class="wardrobe-banner">
+      <strong>示例，不是你的衣服。</strong>
+      {{ wardrobe.note }}
+    </div>
+    {% endif %}
+    {% for category in ["外套", "上装", "裤装", "鞋", "配饰"] %}
+    <h3>{{ category }}</h3>
+    <div class="grid-3">
+      {% for piece in wardrobe.pieces %}
+      {% if piece.category == category %}
+      <article class="card">
+        <span class="badge">示例</span>
+        <h3>{{ piece.name }}</h3>
+        <p>{{ piece.color }} · {{ piece.fit }}</p>
+        <p class="meta">{{ piece.seasons | join("、") }} · {{ piece.tier }}</p>
+      </article>
+      {% endif %}
+      {% endfor %}
+    </div>
+    {% endfor %}
+  </section>
+</div>
+<template id="local-card">
+  <article class="card outfit-card" data-origin="local">
+    <img alt="">
+    <div class="body">
+      <span class="badge local">仅本机</span>
+      <h3></h3>
+      <ul class="tag-list"></ul>
+      <p class="why"></p>
+      <ul class="items"></ul>
+      <p class="caption">图：保存在这台设备上的照片，尚未发布到网站。</p>
+      <div class="thumb-row"></div>
+      <p><button type="button" class="btn danger small" data-delete>删除这套</button></p>
+    </div>
+  </article>
+</template>
+<script src="{{ '/assets/js/wardrobe.js' | url }}" defer></script>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 716 836" width="716" height="836" role="img">
+<title>奶白针织加深蓝夹克</title>
+     <rect width="716" height="836" fill="#f3ecdf"/>
+     <rect x="10" y="10" width="696" height="816" rx="18" fill="#fbf7f1" stroke="#e4d8c8"/>
+     <g transform="translate(78.00000000000001 40) scale(1.15)"><g id="p0"><ellipse cx="100" cy="236" rx="68" ry="8" fill="#2a2118" opacity="0.1"/>
+    <path d="M50 80c-12 22-14 64-4 104 4 8 14 6 14-4l12-70z" fill="#1d2a41"/>
+    <path d="M150 80c12 22 14 64 4 104-4 8-14 6-14-4l-12-70z" fill="#1d2a41"/>
+    <path d="M68 66h64l16 140H52z" fill="#1e3558" stroke="#181d29" stroke-width="2"/>
+    <path d="M90 66h20v18H90z" fill="#1d2a41"/>
+    <path d="M100 84 v110" stroke="#181d29" stroke-width="2"/>
+    <circle cx="108" cy="110" r="2.4" fill="#181d29"/>
+    <circle cx="108" cy="132" r="2.4" fill="#181d29"/>
+    <path d="M74 124h22v16H74z" fill="#1d2a41" opacity=".4"/>
+    <path d="M112 124h20v16h-20z" fill="#1d2a41" opacity=".35"/>
+    <path d="M64 188h72" stroke="#181d29" stroke-width="3"/>
+  </g></g>
+<text x="193" y="370" text-anchor="middle" font-size="26" fill="#1c1915" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans SC, WenQuanYi Micro Hei, sans-serif">藏青 · 羊毛夹克</text>
+<text x="193" y="400" text-anchor="middle" font-size="18" fill="#6e665c" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans SC, WenQuanYi Micro Hei, sans-serif">衣摆盖臀，肩不滑落</text>
+<g transform="translate(408 40) scale(1.15)"><g id="p1"><ellipse cx="100" cy="236" rx="68" ry="8" fill="#2a2118" opacity="0.1"/>
+    <path d="M46 92c-12 22-8 78 4 116 4 6 14 4 14-6l10-78z" fill="#aea9a0"/>
+    <path d="M154 92c12 22 8 78-4 116-4 6-14 4-14-6l-10-78z" fill="#aea9a0"/>
+    <path d="M66 74c12-8 56-8 68 0l12 142H54z" fill="#f4efe4" stroke="#69645e" stroke-width="2"/>
+    <path d="M84 62h32v28c-6 10-26 10-32 0z" fill="#aea9a0" stroke="#69645e" stroke-width="2"/>
+         <path d="M88 70h24" stroke="#f9f4ea" stroke-width="2"/>
+    <path d="M62 200h76" stroke="#69645e" stroke-width="5"/>
+    <path d="M52 176c8 4 8 4 0 8M148 176c-8 4-8 4 0 8" stroke="#69645e" stroke-width="2" fill="none"/>
+    <path d="M78 120c8 6 8 10 0 16M110 130c10 4 8 12 0 16" stroke="#f9f4ea" stroke-width="2" fill="none" opacity=".75"/>
+  </g></g>
+<text x="523" y="370" text-anchor="middle" font-size="26" fill="#1c1915" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans SC, WenQuanYi Micro Hei, sans-serif">奶白 · 薄高领</text>
+<text x="523" y="400" text-anchor="middle" font-size="18" fill="#6e665c" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans SC, WenQuanYi Micro Hei, sans-serif">贴颈，不堆厚</text>
+<g transform="translate(78.00000000000001 430) scale(1.15)"><g id="p2"><ellipse cx="100" cy="236" rx="68" ry="8" fill="#2a2118" opacity="0.1"/>
+    <path d="M62 46h76v16H62z" fill="#8e754d"/>
+    <path d="M66 62 L58 230 h34 L100 78 L108 230 h34 L134 62z" fill="#c4a36a" stroke="#574730" stroke-width="2"/>
+    <path d="M84 78 v140M116 78 v140" stroke="#ddc8a4" stroke-width="1.4" opacity=".65"/>
+    <path d="M64 220h28M108 220h28" stroke="#ddc8a4" stroke-width="2" opacity=".7"/>
+    
+    <path d="M92 52h6v8h-6z" fill="#574730"/>
+  </g></g>
+<text x="193" y="760" text-anchor="middle" font-size="26" fill="#1c1915" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans SC, WenQuanYi Micro Hei, sans-serif">卡其 · 直筒裤</text>
+<text x="193" y="790" text-anchor="middle" font-size="18" fill="#6e665c" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans SC, WenQuanYi Micro Hei, sans-serif">直筒</text>
+<g transform="translate(408 430) scale(1.15)"><g id="p3"><ellipse cx="100" cy="236" rx="68" ry="8" fill="#2a2118" opacity="0.1"/>
+    <path d="M34 156c28-8 46-28 70-28 22 0 40 8 62 16 8 3 16 12 16 22v10H48c-16 0-24-10-14-20z" fill="#f7f7f4" stroke="#6a6764" stroke-width="2"/>
+    <path d="M48 146c18-16 40-22 58-14" fill="none" stroke="#6a6764" stroke-width="2"/>
+    <path d="M70 150c16 6 20 16 8 24" fill="none" stroke="#faf8f4" stroke-width="3"/>
+    <path d="M40 186h132c4 8-2 12-10 12H52c-12 0-16-6-12-12z" fill="#b0aeab"/>
+  </g></g>
+<text x="523" y="760" text-anchor="middle" font-size="26" fill="#1c1915" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans SC, WenQuanYi Micro Hei, sans-serif">白 · 白鞋</text>
+<text x="523" y="790" text-anchor="middle" font-size="18" fill="#6e665c" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans SC, WenQuanYi Micro Hei, sans-serif">低帮，鞋型简单</text>
+</svg>

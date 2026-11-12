@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 716 836" width="716" height="836" role="img">
+<title>法兰绒衬衫与工装靴</title>
+     <rect width="716" height="836" fill="#f3ecdf"/>
+     <rect x="10" y="10" width="696" height="816" rx="18" fill="#fbf7f1" stroke="#e4d8c8"/>
+     <g transform="translate(78.00000000000001 40) scale(1.15)"><g id="p0"><ellipse cx="100" cy="236" rx="68" ry="8" fill="#2a2118" opacity="0.1"/>
+    <path d="M48 96c-10 18-8 50 2 74 4 6 12 4 12-4l10-48z" fill="#9b8c72"/>
+    <path d="M152 96c10 18 8 50-2 74-4 6-12 4-12-4l-10-48z" fill="#9b8c72"/>
+    <path d="M64 78c8-18 64-18 72 0l12 140H52z" fill="#d7c4a0" stroke="#5e5444" stroke-width="2"/>
+    <g clip-path="url(#p0clip)" stroke="#5e5444" stroke-width="1.4" opacity=".35">
+            <path d="M60 100h80"/><path d="M60 114h80"/><path d="M60 128h80"/><path d="M60 142h80"/><path d="M60 156h80"/><path d="M60 170h80"/><path d="M60 184h80"/><path d="M60 198h80"/>
+            <path d="M72 90v120"/><path d="M88 90v120"/><path d="M104 90v120"/><path d="M120 90v120"/><path d="M136 90v120"/>
+          </g>
+          <clipPath id="p0clip"><path d="M64 78c8-18 64-18 72 0l12 140H52z"/></clipPath>
+    <path d="M78 74c8 10 14 22 22 22s14-12 22-22c-8 16-14 20-22 20s-14-4-22-20z" fill="#e8dbc3" stroke="#5e5444" stroke-width="1.6"/>
+    <path d="M100 96 v96" stroke="#5e5444" stroke-width="1.6"/>
+    <circle cx="100" cy="112" r="2" fill="#5e5444"/>
+    <circle cx="100" cy="132" r="2" fill="#5e5444"/>
+    <circle cx="100" cy="152" r="2" fill="#5e5444"/>
+    <path d="M78 168h18v16H78z" fill="#9b8c72" opacity=".25"/>
+  </g></g>
+<text x="193" y="370" text-anchor="middle" font-size="26" fill="#1c1915" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans SC, WenQuanYi Micro Hei, sans-serif">浅卡其 · 法兰绒衬衫</text>
+<text x="193" y="400" text-anchor="middle" font-size="18" fill="#6e665c" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans SC, WenQuanYi Micro Hei, sans-serif">可敞开，内搭白 T</text>
+<g transform="translate(408 40) scale(1.15)"><g id="p1"><ellipse cx="100" cy="236" rx="68" ry="8" fill="#2a2118" opacity="0.1"/>
+    <path d="M52 86c-8 16-6 40 2 58 4 4 12 2 12-6l8-32 8 130h36l8-130 8 32c0 8 8 10 12 6 8-18 10-42 2-58-10-8-24-16-48-16s-38 8-48 16z" fill="#f7f7f4" stroke="#6a6764" stroke-width="2"/>
+    <path d="M86 74c8 12 20 12 28 0" fill="#b0aeab"/>
+    <path d="M72 214h56" stroke="#6a6764" stroke-width="3"/>
+  </g></g>
+<text x="523" y="370" text-anchor="middle" font-size="26" fill="#1c1915" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans SC, WenQuanYi Micro Hei, sans-serif">白 · T 恤</text>
+<text x="523" y="400" text-anchor="middle" font-size="18" fill="#6e665c" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans SC, WenQuanYi Micro Hei, sans-serif">领口干净</text>
+<g transform="translate(78.00000000000001 430) scale(1.15)"><g id="p2"><ellipse cx="100" cy="236" rx="68" ry="8" fill="#2a2118" opacity="0.1"/>
+    <path d="M62 46h76v16H62z" fill="#2a3750"/>
+    <path d="M66 62 L56 230 h34 L100 78 L110 230 h34 L134 62z" fill="#31486f" stroke="#1f2532" stroke-width="2"/>
+    <path d="M84 78 v140M116 78 v140" stroke="#8893a6" stroke-width="1.4" opacity=".65"/>
+    <path d="M64 220h28M108 220h28" stroke="#8893a6" stroke-width="2" opacity=".7"/>
+    <path d="M74 78h18v16H74z" fill="#2a3750" opacity=".45"/>
+         <path d="M78 82h12M80 86h8" stroke="#e2c48a" stroke-width="1.2"/>
+         <path d="M86 70 v150" stroke="#d7b07a" stroke-width="1.2" opacity=".8"/>
+         <path d="M118 70 v150" stroke="#d7b07a" stroke-width="1.2" opacity=".8"/>
+    <path d="M92 52h6v8h-6z" fill="#1f2532"/>
+  </g></g>
+<text x="193" y="760" text-anchor="middle" font-size="26" fill="#1c1915" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans SC, WenQuanYi Micro Hei, sans-serif">靛蓝 · 直筒牛仔裤</text>
+<text x="193" y="790" text-anchor="middle" font-size="18" fill="#6e665c" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans SC, WenQuanYi Micro Hei, sans-serif">深色，裤脚盖靴口一点</text>
+<g transform="translate(408 430) scale(1.15)"><g id="p3"><ellipse cx="100" cy="236" rx="68" ry="8" fill="#2a2118" opacity="0.1"/>
+    <path d="M48 118h46c8 18 10 36 8 52h62c10 0 16 8 12 16H50c-16 0-24-12-20-28 4-16 10-28 18-40z" fill="#6b4b32" stroke="#35261a" stroke-width="2"/>
+    <path d="M62 132v46M74 128v50" stroke="#a99583" stroke-width="2"/>
+    <path d="M46 186h128" stroke="#35261a" stroke-width="5" stroke-linecap="round"/>
+    <path d="M44 196h18v8H48z" fill="#513927"/>
+  </g></g>
+<text x="523" y="760" text-anchor="middle" font-size="26" fill="#1c1915" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans SC, WenQuanYi Micro Hei, sans-serif">棕 · 工装靴</text>
+<text x="523" y="790" text-anchor="middle" font-size="18" fill="#6e665c" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans SC, WenQuanYi Micro Hei, sans-serif">圆头，能走</text>
+</svg>

@@ -1,0 +1,87 @@
+name: Publish submitted outfit
+
+on:
+  issues:
+    types: [opened, labeled]
+
+permissions:
+  contents: write
+  issues: write
+  pages: write
+  id-token: write
+
+jobs:
+  publish:
+    if: contains(github.event.issue.labels.*.name, '提交搭配') || startsWith(github.event.issue.title, '搭配')
+    runs-on: ubuntu-latest
+    outputs:
+      skip: ${{ steps.outfit.outputs.skip }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - name: Turn the issue into an outfit folder
+        id: outfit
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ISSUE_BODY: ${{ github.event.issue.body }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+        run: |
+          set +e
+          node scripts/publish-outfit-from-issue.mjs > /tmp/outfit-result.json
+          code=$?
+          set -e
+          cat /tmp/outfit-result.json
+          node --input-type=module -e '
+            import fs from "node:fs";
+            const result = JSON.parse(fs.readFileSync("/tmp/outfit-result.json", "utf8"));
+            const extra = "\n\n如果自动收录失败，可以在上传页导出 JSON，运行 `npm run import-outfit -- 文件.json`，或自己新建 `src/outfits/你的id/outfit.yml`，照片放在同一文件夹，提交到 main。";
+            fs.writeFileSync("/tmp/comment.md", (result.message || "已处理。") + (result.ok ? "" : extra));
+            fs.writeFileSync("/tmp/outfit-id.txt", result.id || "");
+            fs.writeFileSync("/tmp/outfit-skip.txt", result.skip ? "yes" : "no");
+          '
+          skip=$(cat /tmp/outfit-skip.txt)
+          echo "skip=$skip" >> "$GITHUB_OUTPUT"
+          if [ "$skip" = "yes" ]; then
+            exit 0
+          fi
+          if [ "$code" -ne 0 ]; then
+            gh issue comment "$ISSUE_NUMBER" --body-file /tmp/comment.md
+            exit 1
+          fi
+          id=$(cat /tmp/outfit-id.txt)
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "src/outfits/$id"
+          git commit -m "收录搭配：${ISSUE_TITLE}"
+          git push
+          printf '已写入 `src/outfits/%s/` 并提交到 main。网站更新后会出现在「我的衣橱」。\n' "$id" > /tmp/comment.md
+          gh issue comment "$ISSUE_NUMBER" --body-file /tmp/comment.md
+          gh issue close "$ISSUE_NUMBER"
+      - name: Install
+        if: steps.outfit.outputs.skip != 'yes'
+        run: npm ci
+      - name: Build
+        if: steps.outfit.outputs.skip != 'yes'
+        run: npm run build
+      - name: Upload site
+        if: steps.outfit.outputs.skip != 'yes'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+  deploy:
+    needs: publish
+    if: needs.publish.result == 'success' && needs.publish.outputs.skip != 'yes'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4

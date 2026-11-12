@@ -1,0 +1,49 @@
+---
+layout: base.njk
+permalink: /curriculum/
+title: 三十日课
+---
+<div class="wrap">
+  <header class="page-head">
+    <p class="kicker">机器可读的课表在仓库根目录 curriculum.yml</p>
+    <h1>三十日课</h1>
+    <p class="lede">顺序是基础、配色、风格、场景，然后衣橱和细节。不重复题目。现在是十一月，场景先讲秋冬，春夏放在同一逻辑的换季篇里。</p>
+  </header>
+  <div class="meter" aria-hidden="true">
+    <span style="width: {{ (curriculum.published_count / curriculum.total * 100) | round(1) }}%"></span>
+  </div>
+  <p class="meta">已发布 {{ curriculum.published_count }} / {{ curriculum.total }}。下一篇待写：第 {{ curriculum.computed_next_day }} 天。</p>
+
+  {% if curriculum.computed_next_day %}
+    {% set upcoming = curriculum.days | dayByNumber(curriculum.computed_next_day) %}
+    <div class="next-box">
+      <p class="meta" style="color:#e4d3bc">下一次更新写这一篇</p>
+      <p>第 {{ upcoming.day }} 天 · {{ upcoming.section }} · {{ upcoming.title }}</p>
+    </div>
+  {% endif %}
+
+  <ol class="day-list">
+    {% for day in curriculum.days %}
+    <li>
+      <details class="day" {% if day.day == curriculum.computed_next_day %}open{% endif %}>
+        <summary class="day-top">
+          <h3>第 {{ day.day }} 天 · {{ day.title }}</h3>
+          <span class="status {% if day.status == 'published' %}on{% endif %}">{% if day.status == "published" %}已发布{% else %}未发布{% endif %}</span>
+        </summary>
+        <p class="meta">
+          {{ day.section }}
+          {% if day.styles and day.styles.length %} · 风格 {{ day.styles | join("、") }}{% endif %}
+          {% if day.scenes and day.scenes.length %} · 场景 {{ day.scenes | join("、") }}{% endif %}
+          {% if day.seasons and day.seasons.length %} · {{ day.seasons | join("、") }}{% endif %}
+          {% if day.published_date %} · {{ day.published_date }}{% endif %}
+        </p>
+        <p class="outline">{{ day.outline | trim }}</p>
+        {% if day.status == "published" %}
+          {% set post = collections.articles | findBySlug(day.id) %}
+          {% if post %}<p><a href="{{ post.url | url }}">阅读全文</a></p>{% endif %}
+        {% endif %}
+      </details>
+    </li>
+    {% endfor %}
+  </ol>
+</div>

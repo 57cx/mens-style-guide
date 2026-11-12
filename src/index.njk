@@ -1,0 +1,108 @@
+---
+layout: base.njk
+permalink: /
+title: 首页
+bodyPage: home
+---
+<div class="wrap">
+  <header class="hero">
+    <p class="kicker">{{ curriculum.generated_for }} · 先讲秋冬</p>
+    <h1>把肩线穿对，<br>高瘦才有分量。</h1>
+    <p class="lede">{{ site.description }}靠近脸的颜色避开荧光、亮黄和发灰的黄绿，多用藏青、燕麦、卡其、橄榄绿、酒红和奶白。</p>
+    <ul class="profile">
+      <li>身高 {{ curriculum.reader.height_cm }} cm</li>
+      <li>体重 {{ curriculum.reader.weight_kg }} kg</li>
+      <li>{{ curriculum.reader.build }}</li>
+      <li>{{ curriculum.reader.skin }}</li>
+    </ul>
+    <div class="actions">
+      {% set first = collections.articles | first %}
+      {% if first %}
+      <a class="btn" href="{{ first.url | url }}">从第 {{ first.data.day or 1 }} 天读起</a>
+      {% endif %}
+      <a class="btn secondary" href="{{ '/curriculum/' | url }}">看三十日课</a>
+      <a class="btn secondary" href="{{ '/wardrobe/' | url }}">翻搭配图</a>
+    </div>
+    <div class="progress-line">
+      <div>课程进度 {{ curriculum.published_count }} / {{ curriculum.total }}
+        {% if curriculum.computed_next_day %}
+          {% set upcoming = curriculum.days | dayByNumber(curriculum.computed_next_day) %}
+          · 下一篇是第 {{ upcoming.day }} 天「{{ upcoming.title }}」
+        {% endif %}
+      </div>
+      <div class="meter" role="img" aria-label="已发布 {{ curriculum.published_count }} 篇，共 {{ curriculum.total }} 篇">
+        <span style="width: {{ (curriculum.published_count / curriculum.total * 100) | round(1) }}%"></span>
+      </div>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="section-head">
+      <h2>最新文章</h2>
+    </div>
+    {% set posts = collections.articles %}
+    {% include "article-list.njk" %}
+  </section>
+
+  <section class="section">
+    <h2>按板块</h2>
+    <div class="grid-6">
+      {% for item in taxonomies.sections %}
+      <a class="tile" href="{{ ('/sections/' + item.slug + '/') | url }}">
+        <span class="meta">0{{ loop.index }}</span>
+        <h3>{{ item.name }}</h3>
+        <p>{{ item.blurb }}</p>
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>按风格、场景、季节</h2>
+    <div class="browse-block">
+      <h3>风格</h3>
+      <div class="chip-row">
+        {% for item in taxonomies.styles %}
+        <a class="chip" href="{{ ('/styles/' + item.slug + '/') | url }}">{{ item.name }}</a>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="browse-block">
+      <h3>场景</h3>
+      <div class="chip-row">
+        {% for item in taxonomies.scenes %}
+        <a class="chip" href="{{ ('/scenes/' + item.slug + '/') | url }}">{{ item.name }}</a>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="browse-block">
+      <h3>季节</h3>
+      <div class="chip-row">
+        {% for item in taxonomies.seasons %}
+        <a class="chip" href="{{ ('/seasons/' + item.slug + '/') | url }}">{{ item.name }}</a>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <h2>秋冬搭配</h2>
+      <a href="{{ '/wardrobe/' | url }}">全部搭配</a>
+    </div>
+    <div class="outfit-grid">
+      {% for outfit in allOutfits.seed %}
+      {% if loop.index0 < 6 %}
+      <a class="card outfit-card" href="{{ '/wardrobe/' | url }}#outfit-{{ outfit.id }}">
+        <img src="{{ outfit.image | url }}" alt="{{ outfit.title }}">
+        <div class="body">
+          <span class="meta">{{ outfit.scene }} · {{ outfit.style }} · {{ outfit.season }}</span>
+          <h3>{{ outfit.title }}</h3>
+          <p class="why">{{ outfit.why }}</p>
+        </div>
+      </a>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </section>
+</div>

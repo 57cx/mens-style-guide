@@ -1,0 +1,12 @@
+---
+layout: taxonomy.njk
+pagination:
+  data: taxonomies.sections
+  size: 1
+  alias: term
+  addAllPagesToCollections: false
+permalink: "/sections/{{ term.slug }}/"
+kind: section
+eleventyComputed:
+  title: "{{ term.name }}"
+---

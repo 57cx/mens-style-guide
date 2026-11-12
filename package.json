@@ -1,0 +1,24 @@
+{
+  "name": "mens-style-guide",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "衣架笔记：写给 181cm / 72kg、偏黄肤色的男生穿搭课。",
+  "scripts": {
+    "svgs": "node scripts/generate-svgs.mjs",
+    "check": "node scripts/check.mjs",
+    "build": "node scripts/generate-svgs.mjs && eleventy",
+    "dev": "PATH_PREFIX= eleventy --serve --port=8080",
+    "import-outfit": "node scripts/import-outfit.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.8",
+    "js-yaml": "^4.1.0"
+  },
+  "devDependencies": {
+    "@resvg/resvg-js": "^2.6.2"
+  }
+}

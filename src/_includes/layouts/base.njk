@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if title %}{{ title }} · {% endif %}{{ site.name }}</title>
+  <meta name="description" content="{% if summary %}{{ summary }}{% elif term and term.blurb %}{{ term.blurb }}{% elif description %}{{ description }}{% else %}{{ site.description }}{% endif %}">
+  <link rel="icon" href="{{ '/assets/favicon.svg' | url }}" type="image/svg+xml">
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  <meta property="og:title" content="{% if title %}{{ title }}{% else %}{{ site.name }}{% endif %}">
+  <meta property="og:description" content="{{ site.description }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/site.css' | url }}">
+</head>
+<body data-page="{{ bodyPage or '' }}">
+  <a class="skip" href="#main">跳到正文</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="{{ '/' | url }}">
+        <img class="brand-mark" src="{{ '/assets/favicon.svg' | url }}" alt="">
+        <span>
+          <span class="brand-name">{{ site.name }}</span>
+          <span class="brand-tag">{{ site.tagline }}</span>
+        </span>
+      </a>
+      <nav class="nav" aria-label="主导航">
+        <a href="{{ '/' | url }}" {% if page.url == "/" %}aria-current="page"{% endif %}>首页</a>
+        <a href="{{ '/curriculum/' | url }}" {% if page.url == "/curriculum/" %}aria-current="page"{% endif %}>三十日课</a>
+        <a href="{{ '/wardrobe/' | url }}" {% if "/wardrobe/" in page.url and page.url != "/wardrobe/upload/" %}aria-current="page"{% endif %}>我的衣橱</a>
+        <a href="{{ '/wardrobe/upload/' | url }}" {% if page.url == "/wardrobe/upload/" %}aria-current="page"{% endif %}>上传搭配</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    {{ content | safe }}
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>衣架笔记写给固定的一位读者：身高 181cm，体重 72kg，偏高偏瘦，肤色偏黄。建议都按这个条件来，换一个人要重新量肩线和看肤色。</p>
+      <p>插图为站点自绘 SVG。仓库与更新说明见 <a href="{{ site.repo }}">GitHub</a>。</p>
+    </div>
+  </footer>
+</body>
+</html>

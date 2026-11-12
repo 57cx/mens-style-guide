@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 716 836" width="716" height="836" role="img">
+<title>黑羽绒马甲叠卫衣</title>
+     <rect width="716" height="836" fill="#f3ecdf"/>
+     <rect x="10" y="10" width="696" height="816" rx="18" fill="#fbf7f1" stroke="#e4d8c8"/>
+     <g transform="translate(78.00000000000001 40) scale(1.15)"><g id="p0"><ellipse cx="100" cy="236" rx="68" ry="8" fill="#2a2118" opacity="0.1"/>
+    <path d="M74 70c10-16 42-16 52 0l14 150H60z" fill="#1c1c1c" stroke="#171412" stroke-width="2"/>
+    <path d="M92 70h16v14H92z" fill="#1b1918"/>
+    <path d="M78 100h44M76 124h48M76 148h48M78 172h44M82 196h36" stroke="#171412" stroke-width="1.6" opacity=".75"/>
+    <path d="M100 84 v100" stroke="#171412" stroke-width="2"/>
+  </g></g>
+<text x="193" y="370" text-anchor="middle" font-size="26" fill="#1c1915" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans SC, WenQuanYi Micro Hei, sans-serif">黑 · 羽绒马甲</text>
+<text x="193" y="400" text-anchor="middle" font-size="18" fill="#6e665c" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans SC, WenQuanYi Micro Hei, sans-serif">过腰，不要短到肚脐</text>
+<g transform="translate(408 40) scale(1.15)"><g id="p1"><ellipse cx="100" cy="236" rx="68" ry="8" fill="#2a2118" opacity="0.1"/>
+    <path d="M48 96c-14 24-12 78 0 120 4 8 14 6 16-4l8-78z" fill="#a39685"/>
+    <path d="M152 96c14 24 12 78 0 120-4 8-14 6-16-4l-8-78z" fill="#a39685"/>
+    <path d="M66 78c12 40 56 40 68 0l14 140H52z" fill="#e4d3bc" stroke="#63594f" stroke-width="2"/>
+    <path d="M78 70c8 28 36 28 44 0 4 18-8 36-22 36S74 88 78 70z" fill="#a39685"/>
+    <path d="M96 102c8 16 0 20 8 28" fill="none" stroke="#63594f" stroke-width="2"/>
+    <path d="M70 206h60" stroke="#63594f" stroke-width="4"/>
+    <path d="M86 150h10M108 156h12" stroke="#efe3d3" stroke-width="2" opacity=".7"/>
+  </g></g>
+<text x="523" y="370" text-anchor="middle" font-size="26" fill="#1c1915" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans SC, WenQuanYi Micro Hei, sans-serif">燕麦 · 卫衣</text>
+<text x="523" y="400" text-anchor="middle" font-size="18" fill="#6e665c" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans SC, WenQuanYi Micro Hei, sans-serif">肩线在肩骨</text>
+<g transform="translate(78.00000000000001 430) scale(1.15)"><g id="p2"><ellipse cx="100" cy="236" rx="68" ry="8" fill="#2a2118" opacity="0.1"/>
+    <path d="M62 46h76v16H62z" fill="#1d2a41"/>
+    <path d="M66 62 L50 230 h34 L100 78 L116 230 h34 L134 62z" fill="#1e3558" stroke="#181d29" stroke-width="2"/>
+    <path d="M84 78 v140M116 78 v140" stroke="#7d8899" stroke-width="1.4" opacity=".65"/>
+    <path d="M62 214h30M108 214h30" stroke="#181d29" stroke-width="4"/>
+    
+    <path d="M92 52h6v8h-6z" fill="#181d29"/>
+  </g></g>
+<text x="193" y="760" text-anchor="middle" font-size="26" fill="#1c1915" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans SC, WenQuanYi Micro Hei, sans-serif">藏青 · 运动裤</text>
+<text x="193" y="790" text-anchor="middle" font-size="18" fill="#6e665c" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans SC, WenQuanYi Micro Hei, sans-serif">锥形，不紧身</text>
+<g transform="translate(408 430) scale(1.15)"><g id="p3"><ellipse cx="100" cy="236" rx="68" ry="8" fill="#2a2118" opacity="0.1"/>
+    <path d="M34 156c28-8 46-28 70-28 22 0 40 8 62 16 8 3 16 12 16 22v10H48c-16 0-24-10-14-20z" fill="#f7f7f4" stroke="#6a6764" stroke-width="2"/>
+    <path d="M48 146c18-16 40-22 58-14" fill="none" stroke="#6a6764" stroke-width="2"/>
+    <path d="M70 150c16 6 20 16 8 24" fill="none" stroke="#faf8f4" stroke-width="3"/>
+    <path d="M40 186h132c4 8-2 12-10 12H52c-12 0-16-6-12-12z" fill="#b0aeab"/>
+  </g></g>
+<text x="523" y="760" text-anchor="middle" font-size="26" fill="#1c1915" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans SC, WenQuanYi Micro Hei, sans-serif">白 · 运动鞋</text>
+<text x="523" y="790" text-anchor="middle" font-size="18" fill="#6e665c" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans SC, WenQuanYi Micro Hei, sans-serif">低帮</text>
+</svg>

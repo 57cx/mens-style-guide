@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 716 836" width="716" height="836" role="img">
+<title>橄榄中长羽绒</title>
+     <rect width="716" height="836" fill="#f3ecdf"/>
+     <rect x="10" y="10" width="696" height="816" rx="18" fill="#fbf7f1" stroke="#e4d8c8"/>
+     <g transform="translate(78.00000000000001 40) scale(1.15)"><g id="p0"><ellipse cx="100" cy="236" rx="68" ry="8" fill="#2a2118" opacity="0.1"/>
+    <path d="M44 80c-16 30-16 90 0 140 5 8 16 4 16-8L74 108z" fill="#484e34"/>
+    <path d="M156 80c16 30 16 90 0 140-5 8-16 4-16-8L126 108z" fill="#484e34"/>
+    <path d="M70 66h60c22 8 24 150 16 164H54c-8-14-6-156 16-164z" fill="#5e6a45" stroke="#303222" stroke-width="2"/>
+    <path d="M58 100h84M56 126h88M56 152h88M58 178h84M64 204h72" stroke="#303222" stroke-width="1.6" opacity=".7"/>
+    <path d="M88 66h24v16H88z" fill="#484e34"/>
+    <path d="M100 82 v24" stroke="#303222" stroke-width="2"/>
+  </g></g>
+<text x="193" y="370" text-anchor="middle" font-size="26" fill="#1c1915" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans SC, WenQuanYi Micro Hei, sans-serif">橄榄绿 · 羽绒</text>
+<text x="193" y="400" text-anchor="middle" font-size="18" fill="#6e665c" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans SC, WenQuanYi Micro Hei, sans-serif">过臀，直筒，不是泡芙</text>
+<g transform="translate(408 40) scale(1.15)"><g id="p1"><ellipse cx="100" cy="236" rx="68" ry="8" fill="#2a2118" opacity="0.1"/>
+    <path d="M46 92c-12 22-8 78 4 116 4 6 14 4 14-6l10-78z" fill="#a39685"/>
+    <path d="M154 92c12 22 8 78-4 116-4 6-14 4-14-6l-10-78z" fill="#a39685"/>
+    <path d="M66 74c12-8 56-8 68 0l12 142H54z" fill="#e4d3bc" stroke="#63594f" stroke-width="2"/>
+    <path d="M84 62h32v28c-6 10-26 10-32 0z" fill="#a39685" stroke="#63594f" stroke-width="2"/>
+         <path d="M88 70h24" stroke="#efe3d3" stroke-width="2"/>
+    <path d="M62 200h76" stroke="#63594f" stroke-width="5"/>
+    <path d="M52 176c8 4 8 4 0 8M148 176c-8 4-8 4 0 8" stroke="#63594f" stroke-width="2" fill="none"/>
+    <path d="M78 120c8 6 8 10 0 16M110 130c10 4 8 12 0 16" stroke="#efe3d3" stroke-width="2" fill="none" opacity=".75"/>
+  </g></g>
+<text x="523" y="370" text-anchor="middle" font-size="26" fill="#1c1915" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans SC, WenQuanYi Micro Hei, sans-serif">燕麦 · 高领</text>
+<text x="523" y="400" text-anchor="middle" font-size="18" fill="#6e665c" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans SC, WenQuanYi Micro Hei, sans-serif">薄，塞进裤腰</text>
+<g transform="translate(78.00000000000001 430) scale(1.15)"><g id="p2"><ellipse cx="100" cy="236" rx="68" ry="8" fill="#2a2118" opacity="0.1"/>
+    <path d="M62 46h76v16H62z" fill="#1b1918"/>
+    <path d="M66 62 L50 230 h34 L100 78 L116 230 h34 L134 62z" fill="#1c1c1c" stroke="#171412" stroke-width="2"/>
+    <path d="M84 78 v140M116 78 v140" stroke="#7b7976" stroke-width="1.4" opacity=".65"/>
+    <path d="M62 214h30M108 214h30" stroke="#171412" stroke-width="4"/>
+    
+    <path d="M92 52h6v8h-6z" fill="#171412"/>
+  </g></g>
+<text x="193" y="760" text-anchor="middle" font-size="26" fill="#1c1915" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans SC, WenQuanYi Micro Hei, sans-serif">黑 · 锥形裤</text>
+<text x="193" y="790" text-anchor="middle" font-size="18" fill="#6e665c" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans SC, WenQuanYi Micro Hei, sans-serif">大腿不贴，脚口收</text>
+<g transform="translate(408 430) scale(1.15)"><g id="p3"><ellipse cx="100" cy="236" rx="68" ry="8" fill="#2a2118" opacity="0.1"/>
+    <path d="M34 156c28-8 46-28 70-28 22 0 40 8 62 16 8 3 16 12 16 22v10H48c-16 0-24-10-14-20z" fill="#f7f7f4" stroke="#6a6764" stroke-width="2"/>
+    <path d="M48 146c18-16 40-22 58-14" fill="none" stroke="#6a6764" stroke-width="2"/>
+    <path d="M70 150c16 6 20 16 8 24" fill="none" stroke="#faf8f4" stroke-width="3"/>
+    <path d="M40 186h132c4 8-2 12-10 12H52c-12 0-16-6-12-12z" fill="#b0aeab"/>
+  </g></g>
+<text x="523" y="760" text-anchor="middle" font-size="26" fill="#1c1915" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans SC, WenQuanYi Micro Hei, sans-serif">白 · 运动鞋</text>
+<text x="523" y="790" text-anchor="middle" font-size="18" fill="#6e665c" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans SC, WenQuanYi Micro Hei, sans-serif">低帮</text>
+</svg>

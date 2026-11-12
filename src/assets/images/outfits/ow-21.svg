@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 716 836" width="716" height="836" role="img">
+<title>宽松衬衫与针织背心</title>
+     <rect width="716" height="836" fill="#f3ecdf"/>
+     <rect x="10" y="10" width="696" height="816" rx="18" fill="#fbf7f1" stroke="#e4d8c8"/>
+     <g transform="translate(78.00000000000001 40) scale(1.15)"><g id="p0"><ellipse cx="100" cy="236" rx="68" ry="8" fill="#2a2118" opacity="0.1"/>
+    <path d="M48 96c-10 18-8 50 2 74 4 6 12 4 12-4l10-48z" fill="#a39685"/>
+    <path d="M152 96c10 18 8 50-2 74-4 6-12 4-12-4l-10-48z" fill="#a39685"/>
+    <path d="M64 78c8-18 64-18 72 0l12 140H52z" fill="#e4d3bc" stroke="#63594f" stroke-width="2"/>
+    
+    <path d="M78 74c8 10 14 22 22 22s14-12 22-22c-8 16-14 20-22 20s-14-4-22-20z" fill="#efe3d3" stroke="#63594f" stroke-width="1.6"/>
+    <path d="M100 96 v96" stroke="#63594f" stroke-width="1.6"/>
+    <circle cx="100" cy="112" r="2" fill="#63594f"/>
+    <circle cx="100" cy="132" r="2" fill="#63594f"/>
+    <circle cx="100" cy="152" r="2" fill="#63594f"/>
+    <path d="M78 168h18v16H78z" fill="#a39685" opacity=".25"/>
+  </g></g>
+<text x="193" y="370" text-anchor="middle" font-size="26" fill="#1c1915" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans SC, WenQuanYi Micro Hei, sans-serif">燕麦 · 衬衫</text>
+<text x="193" y="400" text-anchor="middle" font-size="18" fill="#6e665c" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans SC, WenQuanYi Micro Hei, sans-serif">衣身松，肩几乎合</text>
+<g transform="translate(408 40) scale(1.15)"><g id="p1"><ellipse cx="100" cy="236" rx="68" ry="8" fill="#2a2118" opacity="0.1"/>
+    <path d="M72 86c12-24 44-24 56 0l10 132c-8 16-68 16-76 0z" fill="#1e3558" stroke="#181d29" stroke-width="2"/>
+    <path d="M90 86 L100 112 L110 86" fill="#1d2a41"/>
+    <path d="M78 200h44" stroke="#181d29" stroke-width="4"/>
+    <path d="M74 96c8 8 8 20 0 28M126 96c-8 8-8 20 0 28" fill="none" stroke="#181d29" stroke-width="2"/>
+  </g></g>
+<text x="523" y="370" text-anchor="middle" font-size="26" fill="#1c1915" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans SC, WenQuanYi Micro Hei, sans-serif">藏青 · 针织背心</text>
+<text x="523" y="400" text-anchor="middle" font-size="18" fill="#6e665c" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans SC, WenQuanYi Micro Hei, sans-serif">盖住塞进裤腰的衬衫</text>
+<g transform="translate(78.00000000000001 430) scale(1.15)"><g id="p2"><ellipse cx="100" cy="236" rx="68" ry="8" fill="#2a2118" opacity="0.1"/>
+    <path d="M62 46h76v16H62z" fill="#8e754d"/>
+    <path d="M66 62 L58 230 h34 L100 78 L108 230 h34 L134 62z" fill="#c4a36a" stroke="#574730" stroke-width="2"/>
+    <path d="M84 78 v140M116 78 v140" stroke="#ddc8a4" stroke-width="1.4" opacity=".65"/>
+    <path d="M64 220h28M108 220h28" stroke="#ddc8a4" stroke-width="2" opacity=".7"/>
+    
+    <path d="M92 52h6v8h-6z" fill="#574730"/>
+  </g></g>
+<text x="193" y="760" text-anchor="middle" font-size="26" fill="#1c1915" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans SC, WenQuanYi Micro Hei, sans-serif">卡其 · 宽直筒裤</text>
+<text x="193" y="790" text-anchor="middle" font-size="18" fill="#6e665c" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans SC, WenQuanYi Micro Hei, sans-serif">直筒，不垂到鞋面太深</text>
+<g transform="translate(408 430) scale(1.15)"><g id="p3"><ellipse cx="100" cy="236" rx="68" ry="8" fill="#2a2118" opacity="0.1"/>
+    <path d="M40 162h82c16 0 30 8 48 14 10 4 18 8 22 14H50c-14 0-20-8-16-16 2-6 4-12 6-12z" fill="#6b4b32" stroke="#35261a" stroke-width="2"/>
+    <path d="M96 158c10 8 22 10 32 6" fill="none" stroke="#35261a" stroke-width="3"/>
+    <path d="M108 164v10" stroke="#513927" stroke-width="2"/>
+    <path d="M46 190h122" stroke="#35261a" stroke-width="4" stroke-linecap="round"/>
+  </g></g>
+<text x="523" y="760" text-anchor="middle" font-size="26" fill="#1c1915" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans SC, WenQuanYi Micro Hei, sans-serif">棕 · 乐福鞋</text>
+<text x="523" y="790" text-anchor="middle" font-size="18" fill="#6e665c" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans SC, WenQuanYi Micro Hei, sans-serif">低跟</text>
+</svg>

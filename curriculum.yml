@@ -1,0 +1,402 @@
+version: 1
+generated_for: 2026-11
+note: 下一篇是 status 不是 published 的最小 day。写完后把该天改成 published，填上 published_date（YYYY-MM-DD），并把 next_day 改成再下一篇的 day。站点也会自己计算 computed_next_day，两边必须一致。
+next_day: 2
+reader:
+  height_cm: 181
+  weight_kg: 72
+  build: 偏高偏瘦，衣架子身材
+  skin: 肤色偏黄，暖调或中性调
+  prefer_colors: [藏青, 燕麦, 卡其, 橄榄绿, 酒红, 奶白]
+  avoid_colors: [荧光色, 亮黄, 发灰的黄绿]
+days:
+  - day: 1
+    id: day-01-proportion
+    title: 高瘦身材的版型与比例：秋冬怎么穿出分量
+    section: 基础原理
+    styles: []
+    scenes: []
+    seasons: [秋冬]
+    outline: |
+      用肩线、衣摆、裤管三件事说明 181cm、72kg 为什么看着薄：空的是厚度，不是腰围。
+      对比亮黄短款加贴身裤，和藏青过臀大衣加直筒裤。解释黄皮为什么要避开亮黄。
+      给出通勤、周末、正式三套秋冬清单，含版型、试衣顺序和价位。
+    status: published
+    published_date: "2026-11-12"
+  - day: 2
+    id: day-02-sizes
+    title: 尺码怎么买：肩宽、袖长、裤长只认这三处
+    section: 基础原理
+    styles: []
+    scenes: []
+    seasons: [秋冬]
+    outline: |
+      不按吊牌上的 M 或 L 买。181cm 先量肩缝是否落在肩骨，再看袖口到不到腕骨。
+      裤长要穿秋冬的鞋试，正装裤和切尔西不要拿九分来凑。
+      说明为什么 72kg 常常肩对了、胸口还空，以及这时不该再放大一码。
+    status: planned
+    published_date: null
+  - day: 3
+    id: day-03-fabrics
+    title: 秋冬面料：羊毛、法兰绒、针织怎么选才有厚度
+    section: 基础原理
+    styles: []
+    scenes: []
+    seasons: [秋冬]
+    outline: |
+      高瘦怕轻飘的薄涤纶贴在身上。用羊毛大衣、法兰绒、中厚针织把视觉重量做出来。
+      讲克重手感怎么摸，什么情况下混纺可以接受。
+      颜色仍避开亮黄和发灰的绿，面料再厚也不能靠荧光色找存在感。
+    status: planned
+    published_date: null
+  - day: 4
+    id: day-04-basics
+    title: 基本单品：一件秋冬衣橱先留下哪几件
+    section: 基础原理
+    styles: []
+    scenes: []
+    seasons: [秋冬]
+    outline: |
+      把外套、针织、衬衫、裤子、鞋收成一份最短清单，服务 181/72 的秋冬。
+      每件只讲它在比例里的工作：谁负责肩，谁负责长度，谁负责靠近脸的颜色。
+      和后面的胶囊衣橱区分开：这一篇讲单品是什么，不讲预算和套数。
+    status: planned
+    published_date: null
+  - day: 5
+    id: day-05-outerwear
+    title: 外套的肩线和衣长：大衣、夹克、羽绒
+    section: 基础原理
+    styles: []
+    scenes: []
+    seasons: [秋冬]
+    outline: |
+      专门比较过膝大衣、盖臀夹克和短羽绒。短款为什么会切在 181 最细的腰上。
+      羽绒怎么选才不像球：直筒、过臀，肩不要滑下去。
+      用藏青、驼、橄榄举例，不把灰色羽绒贴在脸上。
+    status: planned
+    published_date: null
+  - day: 6
+    id: day-06-layers
+    title: 叠穿：加厚，但不在细腰上堆衣服
+    section: 基础原理
+    styles: []
+    scenes: []
+    seasons: [秋冬]
+    outline: |
+      两层和三层怎么留空气。空气保暖，也让 72kg 看起来有厚度。
+      内层收、外层直，避免每一件都宽松。
+      举一套从室内到室外的脱法，颜色不超过三个，靠近脸用燕麦或奶白。
+    status: planned
+    published_date: null
+  - day: 7
+    id: day-07-colors-yes
+    title: 黄皮秋冬的颜色：藏青、燕麦、卡其、酒红、橄榄、奶白
+    section: 配色
+    styles: []
+    scenes: []
+    seasons: [秋冬]
+    outline: |
+      逐个讲这六个颜色放在哪一层。藏青和橄榄适合外套，燕麦和奶白适合领口。
+      酒红可以，但只做内搭或围巾。
+      每色都对着偏黄的肤色说它为什么干净，不写通用色彩理论。
+    status: planned
+    published_date: null
+  - day: 8
+    id: day-08-colors-no
+    title: 会把脸穿黄的颜色：荧光、亮黄、发灰的绿
+    section: 配色
+    styles: []
+    scenes: []
+    seasons: [秋冬]
+    outline: |
+      亮黄、荧光黄绿、发灰的薄荷绿靠近脸时，暖黄肤色会发脏或发青。
+      区分橄榄绿和灰绿：带棕的橄榄可以，粉灰的绿不行。
+      给出替换：想要亮，就用奶白和卡其，不要用荧光。
+    status: planned
+    published_date: null
+  - day: 9
+    id: day-09-three-colors
+    title: 三色原则：一套衣服停在三个颜色
+    section: 配色
+    styles: []
+    scenes: []
+    seasons: [秋冬]
+    outline: |
+      一套里数颜色的方法：鞋和皮带算不算，图案怎么数。
+      181 的身高已经很长，颜色再碎，人就散。
+      用一套失败的四色和一套藏青、燕麦、棕的三色做对比。
+    status: planned
+    published_date: null
+  - day: 10
+    id: day-10-neutrals
+    title: 主色怎么铺：燕麦、奶白、卡其当大面积
+    section: 配色
+    styles: []
+    scenes: []
+    seasons: [秋冬]
+    outline: |
+      大面积用低对比的暖中性色，让黄皮有光，又不像没穿衣服。
+      同色从上到下可以强调 181 的身高，但脚上要有深一点的鞋压住。
+      纯白和燕麦的差别：死白容易显脸黄，奶白和燕麦更稳。
+    status: planned
+    published_date: null
+  - day: 11
+    id: day-11-accents
+    title: 点缀色怎么放：酒红和橄榄只出现一次
+    section: 配色
+    styles: []
+    scenes: []
+    seasons: [秋冬]
+    outline: |
+      点缀只留在一件内搭、一条围巾或一双袜子，不要全身酒红。
+      橄榄做外套可以，做贴脸 T 恤要看它偏棕还是偏灰。
+      给 181/72 一套「一件点缀色 + 两件中性色」的公式。
+    status: planned
+    published_date: null
+  - day: 12
+    id: day-12-japanese
+    title: 日系秋冬：松在身上，肩还在原处
+    section: 风格专题
+    styles: [日系]
+    scenes: []
+    seasons: [秋冬]
+    outline: |
+      日系的宽松用在衣身，不用在肩。滑肩会把 181 的肩宽穿没。
+      核心单品：衬衫、针织背心、直筒偏宽的裤子、乐福。
+      颜色用燕麦、藏青、卡其，避免发白的浅色把腿削得更细。
+    status: planned
+    published_date: null
+  - day: 13
+    id: day-13-amekaji
+    title: 美式复古：丹宁、格子衬衫、工装靴
+    section: 风格专题
+    styles: [美式复古]
+    scenes: []
+    seasons: [秋冬]
+    outline: |
+      丹宁和法兰绒的硬挺正好补上 72kg 偏薄的胸口。
+      夹克衣摆要盖过腰袋，裤管直筒，不要浅漂牛仔裤。
+      工装靴接住裤脚，黄皮靠近脸用浅卡其格纹，不用亮黄格。
+    status: planned
+    published_date: null
+  - day: 14
+    id: day-14-smart
+    title: 通勤商务休闲：没有整套西装的上班法
+    section: 风格专题
+    styles: [通勤商务休闲]
+    scenes: [上班]
+    seasons: [秋冬]
+    outline: |
+      大衣或单件西装外套，配直筒裤和皮鞋，就可以进办公室。
+      肩线仍然是第一标准。72kg 不要买宽大一号来假装挺括。
+      颜色用藏青、燕麦、深棕，领带可以先不打。
+    status: planned
+    published_date: null
+  - day: 15
+    id: day-15-minimal
+    title: 极简：用同一个颜色把身高收干净
+    section: 风格专题
+    styles: [极简]
+    scenes: []
+    seasons: [秋冬]
+    outline: |
+      同色或邻近色从上穿到下，181 会变成一条线。
+      线条干净不等于贴身。腰侧仍要留一拳。
+      脚上用棕色或黑色打断一下，避免整个人发飘；脸旁不要放亮黄。
+    status: planned
+    published_date: null
+  - day: 16
+    id: day-16-street
+    title: 街头：卫衣可以穿，超大号不要
+    section: 风格专题
+    styles: [街头]
+    scenes: []
+    seasons: [秋冬]
+    outline: |
+      卫衣、牛仔夹克、直筒牛仔裤、运动鞋。宽松停在衣身。
+      超大号落肩会让高瘦变成衣服架子上挂着空布。
+      黑色可以，但领口附近留燕麦或奶白，黄皮不至于发灰。
+    status: planned
+    published_date: null
+  - day: 17
+    id: day-17-techwear
+    title: 运动机能：软壳和锥形裤
+    section: 风格专题
+    styles: [运动机能]
+    scenes: [运动]
+    seasons: [秋冬]
+    outline: |
+      软壳、锥形运动裤、简洁跑鞋。锥形是脚踝收一点，不是大腿贴肉。
+      181 的外套仍要过臀，短款冲锋衣会切腰。
+      颜色用黑、藏青、橄榄，荧光条不要靠近脸。
+    status: planned
+    published_date: null
+  - day: 18
+    id: day-18-work-aw
+    title: 秋冬上班：能轮换的五套
+    section: 场景穿搭
+    styles: [通勤商务休闲]
+    scenes: [上班]
+    seasons: [秋冬]
+    outline: |
+      用有限的大衣、针织、衬衫和两条裤子排出五个上班日。
+      每套都写单品、颜色、版型和价位，并说明为什么适合 181/72、黄皮。
+      室内暖气和外套的脱法放在一起讲。
+    status: planned
+    published_date: null
+  - day: 19
+    id: day-19-date-aw
+    title: 秋冬约会：暖，而且脸是干净的
+    section: 场景穿搭
+    styles: [极简]
+    scenes: [约会]
+    seasons: [秋冬]
+    outline: |
+      约会要暖和，但不能用亮色把脸照黄。领口优先燕麦、酒红或奶白。
+      版型仍然合肩、衣摆过臀，72kg 不靠紧身来显得精神。
+      给两套能走路、能坐下的具体搭配。
+    status: planned
+    published_date: null
+  - day: 20
+    id: day-20-travel-aw
+    title: 秋冬出游：走路一整天的城市穿法
+    section: 场景穿搭
+    styles: [美式复古]
+    scenes: [出游]
+    seasons: [秋冬]
+    outline: |
+      鞋子和裤脚先保证能走，再谈样子。直筒裤盖住鞋舌一点点。
+      外套选能脱、能搭在臂上的夹克或中长羽绒。
+      颜色不选会在日光下把黄皮打脏的亮黄。
+    status: planned
+    published_date: null
+  - day: 21
+    id: day-21-sport-aw
+    title: 秋冬运动：健身房一套，户外一套
+    section: 场景穿搭
+    styles: [运动机能]
+    scenes: [运动]
+    seasons: [秋冬]
+    outline: |
+      健身房可以短袖，但裤不要紧到把细腿描死。户外用软壳或抓绒，衣摆过臀。
+      两套分开写，避免拿同一件短棉服应付所有运动。
+      荧光色只允许在几乎看不见的位置，不放在领口。
+    status: planned
+    published_date: null
+  - day: 22
+    id: day-22-formal-aw
+    title: 秋冬正式：婚礼、年会、见家长
+    section: 场景穿搭
+    styles: [通勤商务休闲]
+    scenes: [正式]
+    seasons: [秋冬]
+    outline: |
+      藏青西装或深棕西装，奶白衬衫，圆头皮鞋。衣摆盖住臀部上沿。
+      黑西装可以，但衬衫用燕麦，避免脸被黑和死白夹黄。
+      大衣套在西装外时，大衣要比西装长，肩线两件都得对。
+    status: planned
+    published_date: null
+  - day: 23
+    id: day-23-work-date-ss
+    title: 春夏的上班和约会：把秋冬的逻辑换薄
+    section: 场景穿搭
+    styles: [通勤商务休闲]
+    scenes: [上班, 约会]
+    seasons: [春夏]
+    outline: |
+      肩线、衣摆、裤管三条不变，只把羊毛换成衬衫和薄针织。
+      上班一套、约会一套。短袖也要看肩缝，不要贴胸。
+      夏天的白用奶白，亮黄 T 恤仍然不用。
+    status: planned
+    published_date: null
+  - day: 24
+    id: day-24-other-ss
+    title: 春夏的出游、运动和正式
+    section: 场景穿搭
+    styles: [极简]
+    scenes: [出游, 运动, 正式]
+    seasons: [春夏]
+    outline: |
+      三个场景各一套轻薄版。出游能走，运动不紧身，正式可以不打领带但肩必须对。
+      说明和秋冬篇的差别只在面料和层数，比例不推倒重来。
+      黄皮在强光下更要避开荧光和发灰的绿。
+    status: planned
+    published_date: null
+  - day: 25
+    id: day-25-capsule
+    title: 秋冬胶囊衣橱：按 181/72 列一张清单
+    section: 衣橱建设
+    styles: []
+    scenes: []
+    seasons: [秋冬]
+    outline: |
+      给出一份能覆盖上班、约会、出游的件数清单，每件注明颜色和版型。
+      和第四天的区别：这里是「买齐这些就能换着穿」，不是单品科普。
+      清单要能对上示例衣橱，读者可以把自己的衣服换进去。
+    status: planned
+    published_date: null
+  - day: 26
+    id: day-26-budget
+    title: 预算怎么分：平价、中档、进阶各买什么
+    section: 衣橱建设
+    styles: []
+    scenes: []
+    seasons: [秋冬]
+    outline: |
+      钱先花在肩线和长度最明显的外套和鞋，内搭可以用平价。
+      平价、中档、进阶各给可参考的品牌，并写明只学版型。
+      说明 181 的袖长和裤长常常要改，改衣服的钱算进预算。
+    status: planned
+    published_date: null
+  - day: 27
+    id: day-27-remix
+    title: 不买新衣服，用旧的搭出另一套
+    section: 衣橱建设
+    styles: []
+    scenes: []
+    seasons: [秋冬]
+    outline: |
+      拿胶囊里已有的单品，换场景重组，至少四套新组合。
+      每套仍要检查肩、衣摆、裤管和脸旁的颜色。
+      告诉读者怎么在「我的衣橱」里对照自己的单品，而不是再打开购物车。
+    status: planned
+    published_date: null
+  - day: 28
+    id: day-28-shoes-bags
+    title: 鞋和包：别让脚和肩膀的比例散掉
+    section: 细节
+    styles: []
+    scenes: []
+    seasons: [秋冬]
+    outline: |
+      鞋的厚底、尖头、靴筒高度怎么影响 181 的裤长。
+      包不要太小挂在胸前，也不要大到撞到大衣下摆。
+      颜色跟着三色原则走，包不是第四个跳色。
+    status: planned
+    published_date: null
+  - day: 29
+    id: day-29-face
+    title: 手表、眼镜、发型：靠近脸的三件小事
+    section: 细节
+    styles: []
+    scenes: []
+    seasons: [秋冬]
+    outline: |
+      眼镜框不要选亮黄或荧光色的边，金属细框或深色框更不抢黄皮。
+      手表表盘宜小一号，细手腕戴大表会显得更瘦。
+      发型把额头和脸的比例理短一点，别用厚刘海把已经偏黄的脸压暗。
+    status: planned
+    published_date: null
+  - day: 30
+    id: day-30-tricks
+    title: 卷裤脚、塞衣角：动手之前先看腿和腰
+    section: 细节
+    styles: []
+    scenes: []
+    seasons: [秋冬]
+    outline: |
+      卷裤脚会露出袜子和脚踝。181 的直筒裤如果已经偏短，就不要再卷。
+      塞衣角能把薄衬衫固定住，但塞完腰上不能鼓一包。
+      收成一张「出门前十秒」检查：肩缝、衣摆、裤脚、领口颜色。
+    status: planned
+    published_date: null

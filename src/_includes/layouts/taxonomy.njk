@@ -1,0 +1,24 @@
+---
+layout: base.njk
+---
+<div class="wrap">
+  <header class="page-head">
+    <p class="kicker">
+      {% if kind == "section" %}板块{% elif kind == "style" %}风格{% elif kind == "scene" %}场景{% else %}季节{% endif %}
+    </p>
+    <h1>{{ term.name }}</h1>
+    {% if term.blurb %}<p class="lede">{{ term.blurb }}</p>{% endif %}
+  </header>
+  <section class="section">
+    {% if kind == "section" %}
+      {% set posts = collections.articles | whereSection(term.name) %}
+    {% elif kind == "style" %}
+      {% set posts = collections.articles | whereStyle(term.name) %}
+    {% elif kind == "scene" %}
+      {% set posts = collections.articles | whereScene(term.name) %}
+    {% else %}
+      {% set posts = collections.articles | whereSeason(term.name) %}
+    {% endif %}
+    {% include "article-list.njk" %}
+  </section>
+</div>
