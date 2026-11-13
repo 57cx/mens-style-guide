@@ -439,6 +439,8 @@ textarea { min-height: 7rem; resize: vertical; }
 .look-tile img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border-radius: var(--radius); border: 1px solid var(--line); display: block; }
 .look-tile span { display: block; font-size: 0.92rem; margin-top: 0.3rem; }
 .prose figure img { width: 100%; height: auto; }
+.prose figure.recap video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; background: #111; }
+.prose figure.recap figcaption strong { color: var(--ink, inherit); }
 .prose ul { padding-left: 1.2rem; }
 @media (min-width: 720px) {
   .hero-photo { grid-template-columns: 1.35fr 1fr; }

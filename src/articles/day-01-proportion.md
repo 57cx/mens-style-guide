@@ -16,6 +16,11 @@ summary: 181cm、72kg 缺的是厚度。肩缝对肩骨、衣摆过臀、裤管�
 
 <p class="conclusion">181cm、72kg 是衣架子：骨架有，肉不多。秋冬别往瘦里收，记三件事：肩缝对肩骨，衣摆过臀，裤管留点空。靠近脸用燕麦、奶白，外套用藏青，别碰亮黄。</p>
 
+<figure class="recap">
+  <video controls playsinline preload="metadata" poster="./recap-poster.jpg" src="./recap.mp4" aria-label="第 1 天重点速览：短款亮黄羽绒和过臀藏青大衣、落肩卫衣和合肩针织、亮黄高领和燕麦高领三组错对对比。"></video>
+  <figcaption><strong>重点速览</strong> · 视频：AI 生成，本站自制。30 秒看完今天三件事：外套过臀、松在衣身、贴脸不用亮黄。</figcaption>
+</figure>
+
 ## 图解原理
 
 先说为什么。181 厘米、72 公斤，体重不算轻，但摊在高骨架上，肩、胸、腿的厚度都不够，所以穿什么都显薄。秋冬是补分量的季节：衣服要把骨架撑起来，而不是贴着身体往瘦里收。

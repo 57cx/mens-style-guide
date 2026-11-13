@@ -16,6 +16,11 @@ summary: 181cm 别按吊牌上的 M 或 L 买。先对肩缝，再看袖口，�
 
 <p class="conclusion">别看吊牌上的 M 或 L。按顺序看三处：肩缝落在肩骨上，袖口到腕骨，裤脚碰到鞋面。肩对了胸口还空，用一件高领填，不要放大一码。</p>
 
+<figure class="recap">
+  <video controls playsinline preload="metadata" poster="./recap-poster.jpg" src="./recap.mp4" aria-label="第 2 天重点速览：肩缝、袖长、裤长三组错对对比，同一位模特。"></video>
+  <figcaption><strong>重点速览</strong> · 视频：AI 生成，本站自制。30 秒看完三处：肩缝落在肩骨、袖口到腕骨、裤脚轻碰鞋面。</figcaption>
+</figure>
+
 ## 图解原理
 
 吊牌上的字母不能当尺子。同一个 L，这家的肩按 175 做，那家的袖按 185 做；国产 180、欧码 50、日码 L 也对不齐。你 181 正好卡在 180 和 185 中间，所以只认身上的三处，而且按顺序看。
