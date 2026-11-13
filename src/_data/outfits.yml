@@ -622,3 +622,55 @@
       name: 工装靴
       color: 棕
       fit: 圆头，能走
+- id: ow-25
+  title: 肩对了的大衣通勤
+  scene: 上班
+  style: 通勤商务休闲
+  season: 秋冬
+  colors: [藏青, 奶白, 黑]
+  why: 181 的码由大衣肩缝决定，肩对了就停，72kg 胸口空也不放大；奶白衬衫比死白不显黄，袖口多一指，裤长按牛津鞋改。
+  source: 本站自绘 SVG
+  image: /assets/images/outfits/ow-25.svg
+  items:
+    - type: overcoat
+      name: 羊毛大衣
+      color: 藏青
+      fit: 肩缝在肩骨，不放大
+    - type: shirt
+      name: 衬衫
+      color: 奶白
+      fit: 袖口比大衣多一指
+    - type: trousers
+      name: 直筒西裤
+      color: 黑
+      fit: 裤脚轻碰鞋面
+    - type: oxford
+      name: 牛津鞋
+      color: 黑
+      fit: 圆头，用来试裤长
+- id: ow-26
+  title: 靴面试好的羽绒
+  scene: 出游
+  style: 极简
+  season: 秋冬
+  colors: [橄榄绿, 燕麦, 卡其, 棕]
+  why: 181 的羽绒先摸肩缝，充绒把胸口撑圆也不放大，72kg 的空用燕麦高领填；橄榄偏棕，黄皮不发青，裤长按切尔西试。
+  source: 本站自绘 SVG
+  image: /assets/images/outfits/ow-26.svg
+  items:
+    - type: down-jacket
+      name: 中长羽绒
+      color: 橄榄绿
+      fit: 过臀直筒，肩缝合肩
+    - type: turtleneck
+      name: 高领针织
+      color: 燕麦
+      fit: 先穿上再套羽绒
+    - type: chinos
+      name: 直筒裤
+      color: 卡其
+      fit: 穿靴子试，不九分
+    - type: chelsea
+      name: 切尔西靴
+      color: 棕
+      fit: 圆头，靴筒到踝

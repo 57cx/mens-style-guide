@@ -1,7 +1,7 @@
 version: 1
 generated_for: 2026-11
 note: 下一篇是 status 不是 published 的最小 day。写完后把该天改成 published，填上 published_date（YYYY-MM-DD），并把 next_day 改成再下一篇的 day。站点也会自己计算 computed_next_day，两边必须一致。
-next_day: 2
+next_day: 3
 reader:
   height_cm: 181
   weight_kg: 72
@@ -34,8 +34,8 @@ days:
       不按吊牌上的 M 或 L 买。181cm 先量肩缝是否落在肩骨，再看袖口到不到腕骨。
       裤长要穿秋冬的鞋试，正装裤和切尔西不要拿九分来凑。
       说明为什么 72kg 常常肩对了、胸口还空，以及这时不该再放大一码。
-    status: planned
-    published_date: null
+    status: published
+    published_date: "2026-11-13"
   - day: 3
     id: day-03-fabrics
     title: 秋冬面料：羊毛、法兰绒、针织怎么选才有厚度
