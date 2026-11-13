@@ -42,7 +42,20 @@ bodyPage: wardrobe
   <div class="outfit-grid" id="outfit-grid">
     {% for outfit in allOutfits.all %}
     <article class="card outfit-card" id="outfit-{{ outfit.id }}" data-origin="{{ outfit.origin }}" data-scene="{{ outfit.scene }}" data-style="{{ outfit.style }}" data-season="{{ outfit.season }}" data-colors="{{ outfit.colors | join(',') }}">
-      {% if outfit.image %}
+      {% if outfit.photo_flat %}
+      <div class="outfit-photos{% if not outfit.photo_look %} single{% endif %}">
+        <a class="photo flat" href="{{ outfit.photo_flat | url }}" target="_blank" rel="noopener">
+          <img src="{{ outfit.photo_flat | url }}" alt="{{ outfit.title }}：单品平铺图" loading="lazy" width="1152" height="864">
+          <span>平铺</span>
+        </a>
+        {% if outfit.photo_look %}
+        <a class="photo look" href="{{ outfit.photo_look | url }}" target="_blank" rel="noopener">
+          <img src="{{ outfit.photo_look | url }}" alt="{{ outfit.title }}：上身效果图" loading="lazy" width="864" height="1152">
+          <span>上身</span>
+        </a>
+        {% endif %}
+      </div>
+      {% elif outfit.image %}
       <img src="{{ outfit.image | url }}" alt="{{ outfit.title }}的单品图">
       {% endif %}
       <div class="body">

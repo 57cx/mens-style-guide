@@ -94,7 +94,7 @@ bodyPage: home
       {% for outfit in allOutfits.seed %}
       {% if loop.index0 < 6 %}
       <a class="card outfit-card" href="{{ '/wardrobe/' | url }}#outfit-{{ outfit.id }}">
-        <img src="{{ outfit.image | url }}" alt="{{ outfit.title }}">
+        <img src="{{ (outfit.photo_flat or outfit.image) | url }}" loading="lazy" alt="{{ outfit.title }}">
         <div class="body">
           <span class="meta">{{ outfit.scene }} · {{ outfit.style }} · {{ outfit.season }}</span>
           <h3>{{ outfit.title }}</h3>
