@@ -65,6 +65,15 @@ for (const day of days.filter((item) => item.day >= 18 && item.day <= 22)) {
 if (wardrobe.status !== "example") fail("示例衣橱必须标成 example，换成真衣服后再改");
 if (!String(wardrobe.note || "").includes("示例")) fail("衣橱说明里要写明这是示例");
 if (!wardrobe.pieces || wardrobe.pieces.length < 8) fail("示例衣橱至少 8 件");
+for (const piece of wardrobe.pieces || []) {
+  // 单品图可选；写了就必须在 photos/wardrobe/ 里有对应文件
+  if (!piece.image) continue;
+  if (!String(piece.image).startsWith("/assets/wardrobe/")) fail(`${piece.id} 的 image 要放在 /assets/wardrobe/`);
+  const plainPiece = path.join(root, "photos", "wardrobe", path.basename(piece.image));
+  if (![plainPiece, `${plainPiece}.b64`].some((f) => fs.existsSync(f) && fs.statSync(f).size > 2000)) {
+    fail(`缺少单品图 photos/wardrobe/${path.basename(piece.image)}（或 .b64）`);
+  }
+}
 
 if (!Array.isArray(outfits) || outfits.length < 20) fail("推荐搭配至少 20 套");
 const outfitIds = new Set();
@@ -97,8 +106,11 @@ if (errors.length) {
   process.exit(1);
 }
 
-const generated = spawnSync(process.execPath, ["scripts/generate-svgs.mjs"], { cwd: root, stdio: "inherit" });
-if (generated.status !== 0) process.exit(generated.status || 1);
+for (const script of ["scripts/prepare-photos.mjs", "scripts/generate-svgs.mjs"]) {
+  const run = spawnSync(process.execPath, [script], { cwd: root, stdio: "inherit" });
+  if (run.status !== 0) process.exit(run.status || 1);
+}
+const warnings = [];
 
 for (const outfit of outfits) {
   const file = path.join(root, "src", outfit.image.replace(/^\//, ""));
@@ -131,15 +143,20 @@ for (const day of days.filter((item) => item.status === "published")) {
   for (const heading of ["## 一句话结论", "## 图解原理", "## 对与错", "## 照着买、照着穿"]) {
     if (!body.includes(heading)) fail(`${day.id} 缺少标题 ${heading}`);
   }
+  const figures = body.match(/<figure>[\s\S]*?<\/figure>/g) || [];
   const captions = body.match(/<figcaption>[\s\S]*?<\/figcaption>/g) || [];
-  if (captions.length < 3) fail(`${day.id} 至少 3 张带图注的图`);
-  if (captions.filter((caption) => caption.includes("图：")).length < 3) {
-    fail(`${day.id} 的图注要以「图：」写出来源`);
-  }
+  if (figures.length < 3) fail(`${day.id} 至少 3 张图`);
+  if (captions.length < figures.length) fail(`${day.id} 每张图都要有图注`);
+  if (captions.some((caption) => !caption.includes("图："))) fail(`${day.id} 的图注要以「图：」写出来源`);
+  const photos = [...body.matchAll(/src="\.\/([^"]+\.(?:jpe?g|png|webp))"/gi)];
+  // 写作规范要求每篇至少 6 张写实图；不够只提醒，不挡发布（每日自动发文可能出不了图）
+  if (photos.length < 6) warnings.push(`${day.id} 只有 ${photos.length} 张写实图，规范要求至少 6 张`);
   const plain = body.replace(/<[^>]+>/g, "");
   const han = plain.match(/[\u4e00-\u9fff]/g) || [];
-  console.log(`${day.id} 汉字 ${han.length}`);
-  if (han.length < 2000 || han.length > 3500) fail(`${day.id} 汉字 ${han.length}，需要 2000 到 3500`);
+  const chars = [...plain.replace(/\s+/g, "")].length;
+  console.log(`${day.id} 正文 ${chars} 字（汉字 ${han.length}），图 ${figures.length} 张，其中写实图 ${photos.length} 张`);
+  if (han.length < 600 || han.length > 1800) fail(`${day.id} 汉字 ${han.length}，需要 600 到 1800（全文约 3000 字以内，图为主）`);
+  if (raw.length > 4500) fail(`${day.id} 源文件 ${raw.length} 字符，超过 4500，文字太多了`);
   for (const match of body.matchAll(/src="\.\/([^"]+)"/g)) {
     if (!fs.existsSync(path.join(root, "src/articles", day.id, match[1]))) fail(`${day.id} 缺少图片 ${match[1]}`);
   }
@@ -149,4 +166,5 @@ if (errors.length) {
   console.error(errors.map((item) => `- ${item}`).join("\n"));
   process.exit(1);
 }
+for (const warning of warnings) console.warn(`提醒：${warning}`);
 console.log(`课表 ${days.length} 天，下一篇是第 ${curriculum.next_day} 天；推荐搭配 ${outfits.length} 套。`);

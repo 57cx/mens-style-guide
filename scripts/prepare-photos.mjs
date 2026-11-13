@@ -1,18 +1,21 @@
-// 把 photos/outfits/ 里的搭配实拍图放到 src/assets/outfits/，构建时再原样发布。
+// 把 photos/ 里的实拍图（AI 生成或真实照片）放到构建要用的位置：
+//   photos/outfits/*          → src/assets/outfits/      搭配的平铺图和上身图
+//   photos/wardrobe/*         → src/assets/wardrobe/     衣橱单品图
+//   photos/articles/<文章id>/* → src/articles/<文章id>/   文章配图（正文里写 ./文件名）
 // 支持两种存法：直接放 .jpg/.png/.webp，或放 base64 文本 <文件名>.b64（只能提交文本时用）。
 import fs from "node:fs";
 import path from "node:path";
 
 const root = path.resolve(path.dirname(new URL(import.meta.url).pathname), "..");
-const from = path.join(root, "photos", "outfits");
-const to = path.join(root, "src", "assets", "outfits");
 const IMAGE = /\.(jpe?g|png|webp)$/i;
 
-fs.mkdirSync(to, { recursive: true });
-let count = 0;
-if (fs.existsSync(from)) {
+function copyFolder(from, to) {
+  if (!fs.existsSync(from)) return 0;
+  fs.mkdirSync(to, { recursive: true });
+  let count = 0;
   for (const file of fs.readdirSync(from)) {
     const src = path.join(from, file);
+    if (fs.statSync(src).isDirectory()) continue;
     if (file.endsWith(".b64")) {
       const name = file.slice(0, -4);
       if (!IMAGE.test(name)) continue;
@@ -24,5 +27,17 @@ if (fs.existsSync(from)) {
       count += 1;
     }
   }
+  return count;
 }
-console.log(`搭配实拍图 ${count} 张 → src/assets/outfits/`);
+
+const outfits = copyFolder(path.join(root, "photos", "outfits"), path.join(root, "src", "assets", "outfits"));
+const wardrobe = copyFolder(path.join(root, "photos", "wardrobe"), path.join(root, "src", "assets", "wardrobe"));
+let articles = 0;
+const articleRoot = path.join(root, "photos", "articles");
+if (fs.existsSync(articleRoot)) {
+  for (const entry of fs.readdirSync(articleRoot, { withFileTypes: true })) {
+    if (!entry.isDirectory()) continue;
+    articles += copyFolder(path.join(articleRoot, entry.name), path.join(root, "src", "articles", entry.name));
+  }
+}
+console.log(`实拍图：搭配 ${outfits} 张，衣橱单品 ${wardrobe} 张，文章配图 ${articles} 张`);
