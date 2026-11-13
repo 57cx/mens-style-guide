@@ -7,9 +7,10 @@
   "scripts": {
     "svgs": "node scripts/generate-svgs.mjs",
     "check": "node scripts/check.mjs",
-    "build": "node scripts/generate-svgs.mjs && eleventy",
-    "dev": "PATH_PREFIX= eleventy --serve --port=8080",
-    "import-outfit": "node scripts/import-outfit.mjs"
+    "build": "node scripts/prepare-photos.mjs && node scripts/generate-svgs.mjs && eleventy",
+    "dev": "node scripts/prepare-photos.mjs && PATH_PREFIX= eleventy --serve --port=8080",
+    "import-outfit": "node scripts/import-outfit.mjs",
+    "photos": "node scripts/prepare-photos.mjs"
   },
   "engines": {
     "node": ">=20"

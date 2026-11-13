@@ -41,6 +41,8 @@ npm run check
 
 推荐搭配的总表是 `src/_data/outfits.yml`。继续往列表里加一条即可，字段见写作规范。`type` 用来生成平铺图，构建时会写出 `src/assets/images/outfits/<id>.svg`。
 
+每套推荐搭配在卡片上显示两张写实图：左边单品平铺、右边上身效果（字段 `photo_flat`、`photo_look`、`photo_credit`）。图片放在 `photos/outfits/<id>-flat.jpg` 和 `<id>-look.jpg`，也可以用同名 `.jpg.b64` 文本代替；`npm run build` 会先运行 `scripts/prepare-photos.mjs` 把它们放进 `src/assets/outfits/`。没有实拍图的搭配自动显示 SVG。出图要求见 [WRITING_GUIDE.md](WRITING_GUIDE.md) 的「每套搭配都要两张写实图」。
+
 不想改总表时，也可以新建一个文件夹，构建会把它收进衣橱：
 
 ```text
