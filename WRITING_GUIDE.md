@@ -125,6 +125,9 @@ published_date: "2026-11-13"
   why: 必须同时出现 181 和黄皮或黄，说明为什么适合这个身材和肤色。
   source: 本站自绘 SVG
   image: /assets/images/outfits/ow-25.svg
+  photo_flat: /assets/outfits/ow-25-flat.jpg
+  photo_look: /assets/outfits/ow-25-look.jpg
+  photo_credit: AI 生成，本站自制
   items:
     - type: overcoat
       name: 羊毛大衣
@@ -135,6 +138,18 @@ published_date: "2026-11-13"
 `type` 决定平铺图，只能用这些：`overcoat`、`blazer`、`jacket`、`rider`、`denim-jacket`、`field-jacket`、`down-jacket`、`vest`、`sweater-vest`、`shirt`、`flannel`、`turtleneck`、`crewneck`、`hoodie`、`tee`、`fleece`、`trousers`、`jeans`、`chinos`、`sweatpants`、`chelsea`、`sneaker`、`oxford`、`boot`、`loafer`、`tie`。
 
 `npm run check` 会按这份清单重画 SVG。
+
+### 每套搭配都要两张写实图
+
+从现在起，每一套推荐搭配（包括每天新加的两套）都要配两张写实图，SVG 只是兜底：
+
+1. **平铺图** `photo_flat`：俯拍，暖白亚麻布底，柔和日光，像商品目录。只摆这套里的单品，颜色和名称对上：卡其是浅沙色（不是橄榄棕），燕麦是暖浅米，藏青是深海军蓝，奶白是带暖调的白，驼色、酒红、橄榄绿照字面。不要文字、商标、人。横图 4:3。
+2. **上身图** `photo_look`：同一位模特（东亚男性，181cm、72kg、偏瘦，肤色偏黄暖调，黑色短发），从头到鞋全身入镜，自然光，简单街景或公园小路，表情自然，不要文字和商标。竖图 3:4。参考已有的 `ow-01-look.jpg` 保持同一张脸和身形。
+3. `photo_credit` 写清来源：自己生成的写 `AI 生成，本站自制`；可商用图库写作者和许可。
+
+文件放在 `photos/outfits/`，命名 `<id>-flat.jpg`、`<id>-look.jpg`，长边约 1200px、每张小于 300KB。能提交二进制就直接放 `.jpg`；只能提交文本时，放同名的 base64 文本 `<id>-flat.jpg.b64`。构建时 `scripts/prepare-photos.mjs` 会把它们放到 `src/assets/outfits/`（这个目录不进仓库）。
+
+`npm run check` 会检查：两张要成对、要有 `photo_credit`、文件在 `photos/outfits/` 里。**没有生图能力时**（例如每日自动更新的云端代理），先不写 `photo_flat` / `photo_look` / `photo_credit` 三个字段，卡片会退回显示 SVG；在提交说明里写明「待补实拍图：ow-xx」，之后由能生图的助手补上。
 
 真实照片不要写进总表，改用文件夹：
 

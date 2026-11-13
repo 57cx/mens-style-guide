@@ -103,6 +103,21 @@ if (generated.status !== 0) process.exit(generated.status || 1);
 for (const outfit of outfits) {
   const file = path.join(root, "src", outfit.image.replace(/^\//, ""));
   if (!fs.existsSync(file) || fs.statSync(file).size < 200) fail(`缺少搭配图 ${outfit.image}`);
+  // 实拍图（可选，但要成对）：photos/outfits/ 下放 .jpg 或 .jpg.b64
+  if (outfit.photo_flat || outfit.photo_look) {
+    if (!outfit.photo_flat || !outfit.photo_look) fail(`${outfit.id} 的平铺图和上身图要成对`);
+    if (!outfit.photo_credit) fail(`${outfit.id} 有实拍图但缺 photo_credit`);
+    for (const key of ["photo_flat", "photo_look"]) {
+      const url = outfit[key];
+      if (!url) continue;
+      if (!url.startsWith("/assets/outfits/")) fail(`${outfit.id} 的 ${key} 要放在 /assets/outfits/`);
+      const name = path.basename(url);
+      const plain = path.join(root, "photos", "outfits", name);
+      const encoded = `${plain}.b64`;
+      const ok = [plain, encoded].some((f) => fs.existsSync(f) && fs.statSync(f).size > 2000);
+      if (!ok) fail(`缺少实拍图 photos/outfits/${name}（或 ${name}.b64）`);
+    }
+  }
 }
 
 for (const day of days.filter((item) => item.status === "published")) {

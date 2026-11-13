@@ -234,6 +234,18 @@ p { margin: 0.85em 0; }
 .outfit-card { overflow: hidden; padding: 0; display: flex; flex-direction: column; }
 .outfit-card img { width: 100%; height: auto; background: #f6f1e8; }
 .outfit-card .body { padding: 0.85rem 0.95rem 1rem; }
+/* 实拍图：左平铺 4:3，右上身 3:4，16fr:9fr 让两张一样高 */
+.outfit-photos { display: grid; grid-template-columns: 16fr 9fr; gap: 3px; background: #f6f1e8; }
+.outfit-photos.single { grid-template-columns: 1fr; }
+.outfit-photos .photo { position: relative; display: block; overflow: hidden; }
+.outfit-photos .photo img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.outfit-photos .flat img { aspect-ratio: 4 / 3; }
+.outfit-photos .look img { aspect-ratio: 3 / 4; }
+.outfit-photos .photo span {
+  position: absolute; left: 0.4rem; bottom: 0.4rem;
+  font-size: 0.72rem; line-height: 1; padding: 0.25rem 0.45rem;
+  background: rgba(255, 255, 255, 0.85); color: #333; border-radius: 999px;
+}
 .outfit-card h3 { font-size: 1.15rem; }
 .tag-list { display: flex; flex-wrap: wrap; gap: 0.3rem; margin: 0.35rem 0; padding: 0; list-style: none; }
 .tag-list li {
