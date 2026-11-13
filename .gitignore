@@ -4,3 +4,7 @@ _site/
 *.log
 .cache/
 src/assets/outfits/
+src/assets/wardrobe/
+src/articles/*/*.jpg
+src/articles/*/*.png
+src/articles/*/*.webp
