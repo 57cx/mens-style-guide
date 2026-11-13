@@ -2,7 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { CORE_SCHEMA, load as parseYaml } from "js-yaml";
 
-const ARTICLE_MEDIA = /\.(svg|png|jpe?g|webp|gif)$/i;
+const ARTICLE_MEDIA = /\.(svg|png|jpe?g|webp|gif|mp4|webm)$/i;
 
 function copyArticleMedia(outputDir) {
   const articlesDir = path.join("src", "articles");

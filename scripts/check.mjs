@@ -143,8 +143,12 @@ for (const day of days.filter((item) => item.status === "published")) {
   for (const heading of ["## 一句话结论", "## 图解原理", "## 对与错", "## 照着买、照着穿"]) {
     if (!body.includes(heading)) fail(`${day.id} 缺少标题 ${heading}`);
   }
-  const figures = body.match(/<figure>[\s\S]*?<\/figure>/g) || [];
-  const captions = body.match(/<figcaption>[\s\S]*?<\/figcaption>/g) || [];
+  // 重点速览视频单独算，不计入配图张数，图注写「视频：」
+  const recap = body.match(/<figure class="recap">[\s\S]*?<\/figure>/g) || [];
+  if (recap.some((block) => !block.includes("视频："))) fail(`${day.id} 的重点速览视频图注要以「视频：」写出来源`);
+  const figureBody = body.replace(/<figure class="recap">[\s\S]*?<\/figure>/g, "");
+  const figures = figureBody.match(/<figure>[\s\S]*?<\/figure>/g) || [];
+  const captions = figureBody.match(/<figcaption>[\s\S]*?<\/figcaption>/g) || [];
   if (figures.length < 3) fail(`${day.id} 至少 3 张图`);
   if (captions.length < figures.length) fail(`${day.id} 每张图都要有图注`);
   if (captions.some((caption) => !caption.includes("图："))) fail(`${day.id} 的图注要以「图：」写出来源`);
@@ -157,6 +161,15 @@ for (const day of days.filter((item) => item.status === "published")) {
   console.log(`${day.id} 正文 ${chars} 字（汉字 ${han.length}），图 ${figures.length} 张，其中写实图 ${photos.length} 张`);
   if (han.length < 600 || han.length > 1800) fail(`${day.id} 汉字 ${han.length}，需要 600 到 1800（全文约 3000 字以内，图为主）`);
   if (raw.length > 4500) fail(`${day.id} 源文件 ${raw.length} 字符，超过 4500，文字太多了`);
+  // 重点速览视频：每篇开头一段约 30 秒，photos/articles/<id>/recap.mp4(.b64) + recap-poster.jpg(.b64)
+  if (!/<video[^>]*src="\.\/recap\.mp4"/.test(body)) {
+    warnings.push(`${day.id} 还没有重点速览视频（见写作规范「重点速览视频」）`);
+  } else {
+    for (const name of ["recap.mp4", "recap-poster.jpg"]) {
+      const plain = path.join(root, "photos", "articles", day.id, name);
+      if (![plain, `${plain}.b64`].some((f) => fs.existsSync(f))) fail(`${day.id} 缺少 photos/articles/${day.id}/${name}（或 .b64）`);
+    }
+  }
   for (const match of body.matchAll(/src="\.\/([^"]+)"/g)) {
     if (!fs.existsSync(path.join(root, "src/articles", day.id, match[1]))) fail(`${day.id} 缺少图片 ${match[1]}`);
   }
