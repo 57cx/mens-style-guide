@@ -8,7 +8,7 @@ bodyPage: wardrobe
   <header class="page-head">
     <p class="kicker">搭配图鉴 · 秋冬优先</p>
     <h1>我的衣橱</h1>
-    <p class="lede">下面是按 181cm、72kg、偏黄肤色画的推荐搭配，可以按场景、风格、季节和颜色筛选。你在「上传搭配」里存下的照片只留在这台设备上，会和推荐图排在一起，带「仅本机」标记。</p>
+    <p class="lede">下面是按 181cm、72kg、偏黄肤色挑的推荐搭配，每套一张平铺图、一张上身图，可以按场景、风格、季节和颜色筛选。你在「上传搭配」里存下的照片只留在这台设备上，会和推荐图排在一起，带「仅本机」标记。</p>
     <p><a class="btn" href="{{ '/wardrobe/upload/' | url }}">上传我的搭配</a></p>
   </header>
 
@@ -42,7 +42,20 @@ bodyPage: wardrobe
   <div class="outfit-grid" id="outfit-grid">
     {% for outfit in allOutfits.all %}
     <article class="card outfit-card" id="outfit-{{ outfit.id }}" data-origin="{{ outfit.origin }}" data-scene="{{ outfit.scene }}" data-style="{{ outfit.style }}" data-season="{{ outfit.season }}" data-colors="{{ outfit.colors | join(',') }}">
-      {% if outfit.image %}
+      {% if outfit.photo_flat %}
+      <div class="outfit-photos{% if not outfit.photo_look %} single{% endif %}">
+        <a class="photo flat" href="{{ outfit.photo_flat | url }}" target="_blank" rel="noopener">
+          <img src="{{ outfit.photo_flat | url }}" alt="{{ outfit.title }}：单品平铺图" loading="lazy" width="1152" height="864">
+          <span>平铺</span>
+        </a>
+        {% if outfit.photo_look %}
+        <a class="photo look" href="{{ outfit.photo_look | url }}" target="_blank" rel="noopener">
+          <img src="{{ outfit.photo_look | url }}" alt="{{ outfit.title }}：上身效果图" loading="lazy" width="864" height="1152">
+          <span>上身</span>
+        </a>
+        {% endif %}
+      </div>
+      {% elif outfit.image %}
       <img src="{{ outfit.image | url }}" alt="{{ outfit.title }}的单品图">
       {% endif %}
       <div class="body">
@@ -79,11 +92,13 @@ bodyPage: wardrobe
     <div class="grid-3">
       {% for piece in wardrobe.pieces %}
       {% if piece.category == category %}
-      <article class="card">
+      <article class="card piece-card">
+        {% if piece.image %}<img src="{{ piece.image | url }}" alt="{{ piece.color }}{{ piece.name }}单品图" loading="lazy" width="800" height="800">{% endif %}
         <span class="badge">示例</span>
         <h3>{{ piece.name }}</h3>
         <p>{{ piece.color }} · {{ piece.fit }}</p>
         <p class="meta">{{ piece.seasons | join("、") }} · {{ piece.tier }}</p>
+        {% if piece.image %}<p class="caption">图：AI 生成，本站自制</p>{% endif %}
       </article>
       {% endif %}
       {% endfor %}

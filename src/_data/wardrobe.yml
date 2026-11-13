@@ -3,6 +3,7 @@ title: 示例胶囊
 note: 这是按 181cm、72kg、偏黄肤色、秋冬场景写的示例，不是你的真实衣橱。换成自己的衣服时，改这一份 src/_data/wardrobe.yml，并删掉或改掉「示例」标记。
 pieces:
   - id: ex-coat
+    image: /assets/wardrobe/ex-coat.jpg
     name: 藏青羊毛大衣
     category: 外套
     color: 藏青
@@ -10,6 +11,7 @@ pieces:
     seasons: [秋, 冬]
     tier: 中档
   - id: ex-denim
+    image: /assets/wardrobe/ex-denim.jpg
     name: 靛蓝丹宁夹克
     category: 外套
     color: 靛蓝
@@ -17,6 +19,7 @@ pieces:
     seasons: [秋]
     tier: 平价
   - id: ex-down
+    image: /assets/wardrobe/ex-down.jpg
     name: 橄榄中长羽绒
     category: 外套
     color: 橄榄绿
@@ -24,6 +27,7 @@ pieces:
     seasons: [冬]
     tier: 中档
   - id: ex-turtleneck
+    image: /assets/wardrobe/ex-turtleneck.jpg
     name: 燕麦高领
     category: 上装
     color: 燕麦
@@ -31,6 +35,7 @@ pieces:
     seasons: [秋, 冬]
     tier: 平价
   - id: ex-shirt
+    image: /assets/wardrobe/ex-shirt.jpg
     name: 奶白衬衫
     category: 上装
     color: 奶白
@@ -38,6 +43,7 @@ pieces:
     seasons: [秋, 冬, 春]
     tier: 平价
   - id: ex-flannel
+    image: /assets/wardrobe/ex-flannel.jpg
     name: 浅卡其法兰绒衬衫
     category: 上装
     color: 浅卡其
@@ -45,6 +51,7 @@ pieces:
     seasons: [秋]
     tier: 平价
   - id: ex-wine
+    image: /assets/wardrobe/ex-wine.jpg
     name: 酒红薄针织
     category: 上装
     color: 酒红
@@ -52,6 +59,7 @@ pieces:
     seasons: [秋, 冬]
     tier: 平价
   - id: ex-chino
+    image: /assets/wardrobe/ex-chino.jpg
     name: 深卡其直筒裤
     category: 裤装
     color: 卡其
@@ -59,6 +67,7 @@ pieces:
     seasons: [秋, 冬]
     tier: 平价
   - id: ex-jeans
+    image: /assets/wardrobe/ex-jeans.jpg
     name: 靛蓝直筒牛仔裤
     category: 裤装
     color: 靛蓝
@@ -66,6 +75,7 @@ pieces:
     seasons: [秋, 冬, 春]
     tier: 平价
   - id: ex-black-trouser
+    image: /assets/wardrobe/ex-black-trouser.jpg
     name: 黑直筒西裤
     category: 裤装
     color: 黑
@@ -73,6 +83,7 @@ pieces:
     seasons: [秋, 冬]
     tier: 中档
   - id: ex-chelsea
+    image: /assets/wardrobe/ex-chelsea.jpg
     name: 棕切尔西靴
     category: 鞋
     color: 棕
@@ -80,6 +91,7 @@ pieces:
     seasons: [秋, 冬]
     tier: 中档
   - id: ex-sneaker
+    image: /assets/wardrobe/ex-sneaker.jpg
     name: 白运动鞋
     category: 鞋
     color: 白
@@ -87,6 +99,7 @@ pieces:
     seasons: [秋, 春]
     tier: 平价
   - id: ex-oxford
+    image: /assets/wardrobe/ex-oxford.jpg
     name: 黑牛津鞋
     category: 鞋
     color: 黑
@@ -94,6 +107,7 @@ pieces:
     seasons: [秋, 冬, 春]
     tier: 中档
   - id: ex-scarf
+    image: /assets/wardrobe/ex-scarf.jpg
     name: 燕麦围巾
     category: 配饰
     color: 燕麦

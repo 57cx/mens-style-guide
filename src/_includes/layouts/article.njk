@@ -17,7 +17,7 @@ layout: base.njk
       {% for outfit in allOutfits.seed %}
       {% if loop.index0 < 3 %}
       <a class="card outfit-card" href="{{ '/wardrobe/' | url }}#outfit-{{ outfit.id }}">
-        <img src="{{ outfit.image | url }}" alt="{{ outfit.title }}的单品图">
+        <img src="{{ (outfit.photo_flat or outfit.image) | url }}" loading="lazy" alt="{{ outfit.title }}的单品图">
         <div class="body">
           <h3>{{ outfit.title }}</h3>
           <p class="why">{{ outfit.why }}</p>

@@ -9,7 +9,28 @@ layout: base.njk
     <h1>{{ term.name }}</h1>
     {% if term.blurb %}<p class="lede">{{ term.blurb }}</p>{% endif %}
   </header>
+  {% if kind != "section" %}
+  {% set looks = allOutfits.seed | outfitsFor(kind, term.name) %}
+  {% if looks.length %}
   <section class="section">
+    <div class="section-head">
+      <h2>{{ term.name }}，照着穿</h2>
+      <a href="{{ '/wardrobe/' | url }}">全部搭配</a>
+    </div>
+    <div class="look-strip">
+      {% for outfit in looks %}
+      <a class="look-tile" href="{{ '/wardrobe/' | url }}#outfit-{{ outfit.id }}">
+        <img src="{{ (outfit.photo_look or outfit.photo_flat or outfit.image) | url }}" alt="{{ outfit.title }}：上身效果图" loading="lazy" width="864" height="1152">
+        <span>{{ outfit.title }}</span>
+      </a>
+      {% endfor %}
+    </div>
+    <p class="caption">图：AI 生成，本站自制</p>
+  </section>
+  {% endif %}
+  {% endif %}
+  <section class="section">
+    <h2>相关文章</h2>
     {% if kind == "section" %}
       {% set posts = collections.articles | whereSection(term.name) %}
     {% elif kind == "style" %}

@@ -234,6 +234,18 @@ p { margin: 0.85em 0; }
 .outfit-card { overflow: hidden; padding: 0; display: flex; flex-direction: column; }
 .outfit-card img { width: 100%; height: auto; background: #f6f1e8; }
 .outfit-card .body { padding: 0.85rem 0.95rem 1rem; }
+/* 实拍图：左平铺 4:3，右上身 3:4，16fr:9fr 让两张一样高 */
+.outfit-photos { display: grid; grid-template-columns: 16fr 9fr; gap: 3px; background: #f6f1e8; }
+.outfit-photos.single { grid-template-columns: 1fr; }
+.outfit-photos .photo { position: relative; display: block; overflow: hidden; }
+.outfit-photos .photo img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.outfit-photos .flat img { aspect-ratio: 4 / 3; }
+.outfit-photos .look img { aspect-ratio: 3 / 4; }
+.outfit-photos .photo span {
+  position: absolute; left: 0.4rem; bottom: 0.4rem;
+  font-size: 0.72rem; line-height: 1; padding: 0.25rem 0.45rem;
+  background: rgba(255, 255, 255, 0.85); color: #333; border-radius: 999px;
+}
 .outfit-card h3 { font-size: 1.15rem; }
 .tag-list { display: flex; flex-wrap: wrap; gap: 0.3rem; margin: 0.35rem 0; padding: 0; list-style: none; }
 .tag-list li {
@@ -406,4 +418,38 @@ textarea { min-height: 7rem; resize: vertical; }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
+}
+
+/* 写实图：首页大图、风格/场景照片格、文章列表缩略图、单品图、风格页上身条 */
+.hero-photo { display: grid; gap: 1.4rem; align-items: center; }
+.hero-figure { margin: 0; }
+.hero-figure img { display: block; width: 100%; max-height: 34rem; aspect-ratio: 3 / 4; object-fit: cover; border-radius: var(--radius); border: 1px solid var(--line); }
+.hero-figure figcaption { color: var(--faint); font-size: 0.82rem; margin-top: 0.35rem; }
+.photo-tiles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.6rem; }
+.photo-tile { position: relative; display: block; border-radius: var(--radius); overflow: hidden; background: var(--card); border: 1px solid var(--line); aspect-ratio: 3 / 4; color: inherit; text-decoration: none; }
+.photo-tile img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.photo-tile span { position: absolute; left: 0.5rem; bottom: 0.5rem; background: rgba(250, 246, 238, 0.94); border-radius: 999px; padding: 0.2rem 0.7rem; font-size: 0.92rem; }
+.photo-tile:hover { border-color: var(--line-strong); }
+.article-row.has-cover { grid-template-columns: auto 1fr 6.5rem; align-items: center; }
+.row-cover { width: 6.5rem; height: 8.6rem; object-fit: cover; border-radius: 10px; border: 1px solid var(--line); }
+.piece-card img { display: block; width: calc(100% + 2.1rem); max-width: none; margin: -1rem -1.05rem 0.7rem; aspect-ratio: 1 / 1; object-fit: cover; border-radius: var(--radius) var(--radius) 0 0; }
+.piece-card { overflow: hidden; }
+.look-strip { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.6rem; }
+.look-tile { display: block; color: inherit; text-decoration: none; }
+.look-tile img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border-radius: var(--radius); border: 1px solid var(--line); display: block; }
+.look-tile span { display: block; font-size: 0.92rem; margin-top: 0.3rem; }
+.prose figure img { width: 100%; height: auto; }
+.prose figure.recap video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; background: #111; }
+.prose figure.recap figcaption strong { color: var(--ink, inherit); }
+.prose ul { padding-left: 1.2rem; }
+@media (min-width: 720px) {
+  .hero-photo { grid-template-columns: 1.35fr 1fr; }
+  .photo-tiles { grid-template-columns: repeat(6, 1fr); }
+  .look-strip { grid-template-columns: repeat(4, 1fr); }
+  .article-row.has-cover { grid-template-columns: auto 1fr 8rem; }
+  .row-cover { width: 8rem; height: 10.6rem; }
+}
+@media (max-width: 719px) {
+  .article-row.has-cover { grid-template-columns: auto 1fr 5rem; }
+  .row-cover { width: 5rem; height: 6.6rem; }
 }

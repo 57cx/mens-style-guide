@@ -15,15 +15,10 @@ import {
 const root = path.resolve(path.dirname(new URL(import.meta.url).pathname), "..");
 const catalogPath = path.join(root, "src/_data/outfits.yml");
 const outfitDir = path.join(root, "src/assets/images/outfits");
-const articleDir = path.join(root, "src/articles/day-01-proportion");
 
 fs.mkdirSync(outfitDir, { recursive: true });
-fs.mkdirSync(articleDir, { recursive: true });
 
-fs.writeFileSync(path.join(articleDir, "proportion.svg"), proportionSvg());
-fs.writeFileSync(path.join(articleDir, "compare.svg"), compareSvg());
-fs.writeFileSync(path.join(articleDir, "palette.svg"), paletteSvg());
-fs.writeFileSync(path.join(articleDir, "flatlay.svg"), lessonFlatlay());
+// 文章配图已改成写实照片（photos/articles/），这里不再往文章目录里写 SVG。
 
 if (fs.existsSync(catalogPath)) {
   const outfits = parseYaml(fs.readFileSync(catalogPath, "utf8"), { schema: CORE_SCHEMA }) || [];
@@ -38,8 +33,6 @@ if (fs.existsSync(catalogPath)) {
 } else {
   console.log("no outfits.yml yet, skipped boards");
 }
-
-console.log("drew day 1 figures");
 
 if (process.argv.includes("--sheet")) {
   const items = GARMENT_TYPES.map((type) => ({

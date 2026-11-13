@@ -2,7 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { CORE_SCHEMA, load as parseYaml } from "js-yaml";
 
-const ARTICLE_MEDIA = /\.(svg|png|jpe?g|webp|gif)$/i;
+const ARTICLE_MEDIA = /\.(svg|png|jpe?g|webp|gif|mp4|webm)$/i;
 
 function copyArticleMedia(outputDir) {
   const articlesDir = path.join("src", "articles");
@@ -82,6 +82,23 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("whereSeason", (articles, name) =>
     (articles || []).filter((item) => seasonMatch(item.data.seasons || [], name))
   );
+
+  // 风格、场景、季节页用：挑出对应的推荐搭配（带实拍图）
+  eleventyConfig.addFilter("outfitsFor", (outfits, kind, name) =>
+    (outfits || []).filter((outfit) => {
+      if (kind === "style") return outfit.style === name;
+      if (kind === "scene") return outfit.scene === name;
+      if (kind === "season") return seasonMatch([outfit.season], name) || (outfit.season !== "秋冬" && name === "秋冬" && ["秋", "冬"].includes(outfit.season));
+      return false;
+    })
+  );
+
+  eleventyConfig.addFilter("coverFor", (outfits, kind, name) => {
+    const found = (outfits || []).find((outfit) =>
+      kind === "style" ? outfit.style === name : kind === "scene" ? outfit.scene === name : false
+    );
+    return found ? found.photo_look || found.photo_flat || found.image : "";
+  });
 
   eleventyConfig.addFilter("termSlug", (list, name) => {
     const found = (list || []).find((item) => item.name === name);

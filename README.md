@@ -29,17 +29,19 @@ npm run check
 
 1. 打开根目录的 `curriculum.yml`。`next_day` 是下一篇。也可以看已发布网站上的 `/curriculum.json`，字段 `computed_next_day` 以文件为准、两边必须一致。
 2. 新建 `src/articles/<id>.md`。`<id>` 用课表里的 `id`，例如 `src/articles/day-02-sizes.md`。
-3. 图片放在同名文件夹：`src/articles/day-02-sizes/图.svg`。文章里用相对路径 `./图.svg`。
+3. 写实配图（每篇至少 6 张）放在 `photos/articles/day-02-sizes/`，可用 `.jpg` 或同名 `.jpg.b64` 文本。构建时会放进 `src/articles/day-02-sizes/`，文章里用相对路径 `./图.jpg`。
 4. 写完后把这一天的 `status` 改成 `published`，填上 `published_date`（`YYYY-MM-DD`），把 `next_day` 改成再下一篇。
 5. 运行 `npm run check`，通过后提交并推到 `main`。
 
 未写完的稿子放在仓库根目录的 `drafts/`，那里不会被网站读到。
 
-版面、字数、图注和这位读者的身材，见 [WRITING_GUIDE.md](WRITING_GUIDE.md)。
+全文约 3000 字以内、以图为主；版面、字数、图注和这位读者的身材，见 [WRITING_GUIDE.md](WRITING_GUIDE.md)。
 
 ## 加一套推荐搭配
 
 推荐搭配的总表是 `src/_data/outfits.yml`。继续往列表里加一条即可，字段见写作规范。`type` 用来生成平铺图，构建时会写出 `src/assets/images/outfits/<id>.svg`。
+
+每套推荐搭配在卡片上显示两张写实图：左边单品平铺、右边上身效果（字段 `photo_flat`、`photo_look`、`photo_credit`）。图片放在 `photos/outfits/<id>-flat.jpg` 和 `<id>-look.jpg`，也可以用同名 `.jpg.b64` 文本代替；`npm run build` 会先运行 `scripts/prepare-photos.mjs` 把它们放进 `src/assets/outfits/`。没有实拍图的搭配自动显示 SVG。衣橱单品图放 `photos/wardrobe/<id>.jpg`，在 `src/_data/wardrobe.yml` 里写 `image: /assets/wardrobe/<id>.jpg`。首页风格 / 场景入口、风格 / 场景 / 季节页的「照着穿」都直接用搭配的上身图。出图要求见 [WRITING_GUIDE.md](WRITING_GUIDE.md) 的「每套搭配都要两张写实图」。
 
 不想改总表时，也可以新建一个文件夹，构建会把它收进衣橱：
 

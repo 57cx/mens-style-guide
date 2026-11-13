@@ -36,8 +36,13 @@ export default function () {
   const seed = (fs.existsSync(seedPath) ? loadYaml(seedPath) : []).map((outfit) => ({
     ...outfit,
     origin: "recommended",
-    source: outfit.source || "本站自绘 SVG",
-    photos: outfit.image ? [outfit.image] : [],
+    source: outfit.photo_flat ? outfit.photo_credit || "AI 生成，本站自制" : outfit.source || "本站自绘 SVG",
+    cover: outfit.photo_flat || outfit.image,
+    photos: outfit.photo_flat
+      ? [outfit.photo_flat, outfit.photo_look].filter(Boolean)
+      : outfit.image
+        ? [outfit.image]
+        : [],
   }));
 
   const userRoot = path.join("src", "outfits");
