@@ -5,7 +5,8 @@ title: 首页
 bodyPage: home
 ---
 <div class="wrap">
-  <header class="hero">
+  <header class="hero hero-photo">
+    <div class="hero-text">
     <p class="kicker">{{ curriculum.generated_for }} · 先讲秋冬</p>
     <h1>把肩线穿对，<br>高瘦才有分量。</h1>
     <p class="lede">{{ site.description }}靠近脸的颜色避开荧光、亮黄和发灰的黄绿，多用藏青、燕麦、卡其、橄榄绿、酒红和奶白。</p>
@@ -34,6 +35,14 @@ bodyPage: home
         <span style="width: {{ (curriculum.published_count / curriculum.total * 100) | round(1) }}%"></span>
       </div>
     </div>
+    </div>
+    {% set heroOutfit = allOutfits.seed | first %}
+    {% if heroOutfit and heroOutfit.photo_look %}
+    <figure class="hero-figure">
+      <img src="{{ heroOutfit.photo_look | url }}" alt="{{ heroOutfit.title }}：181cm 上身效果" width="864" height="1152">
+      <figcaption>{{ heroOutfit.title }} · 图：AI 生成，本站自制</figcaption>
+    </figure>
+    {% endif %}
   </header>
 
   <section class="section">
@@ -61,17 +70,25 @@ bodyPage: home
     <h2>按风格、场景、季节</h2>
     <div class="browse-block">
       <h3>风格</h3>
-      <div class="chip-row">
+      <div class="photo-tiles">
         {% for item in taxonomies.styles %}
-        <a class="chip" href="{{ ('/styles/' + item.slug + '/') | url }}">{{ item.name }}</a>
+        {% set cover = allOutfits.seed | coverFor("style", item.name) %}
+        <a class="photo-tile" href="{{ ('/styles/' + item.slug + '/') | url }}">
+          {% if cover %}<img src="{{ cover | url }}" alt="{{ item.name }}风格上身示例" loading="lazy" width="864" height="1152">{% endif %}
+          <span>{{ item.name }}</span>
+        </a>
         {% endfor %}
       </div>
     </div>
     <div class="browse-block">
       <h3>场景</h3>
-      <div class="chip-row">
+      <div class="photo-tiles">
         {% for item in taxonomies.scenes %}
-        <a class="chip" href="{{ ('/scenes/' + item.slug + '/') | url }}">{{ item.name }}</a>
+        {% set cover = allOutfits.seed | coverFor("scene", item.name) %}
+        <a class="photo-tile" href="{{ ('/scenes/' + item.slug + '/') | url }}">
+          {% if cover %}<img src="{{ cover | url }}" alt="{{ item.name }}场景上身示例" loading="lazy" width="864" height="1152">{% endif %}
+          <span>{{ item.name }}</span>
+        </a>
         {% endfor %}
       </div>
     </div>

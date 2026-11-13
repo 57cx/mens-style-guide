@@ -1,11 +1,12 @@
 {% for post in posts %}
-<a class="article-row" href="{{ post.url | url }}">
+<a class="article-row{% if post.data.cover %} has-cover{% endif %}" href="{{ post.url | url }}">
   <span class="num">{% if post.data.day %}{{ post.data.day }}{% else %}{{ loop.index }}{% endif %}</span>
   <span>
     <span class="meta">{{ post.data.section }}{% if post.data.seasons %} · {{ post.data.seasons | join(" / ") }}{% endif %} · {{ post.date | dateZh }}</span>
     <h3>{{ post.data.title }}</h3>
     {% if post.data.summary %}<p>{{ post.data.summary }}</p>{% endif %}
   </span>
+  {% if post.data.cover %}<img class="row-cover" src="{{ (post.url + (post.data.cover | replace('./', ''))) | url }}" alt="" loading="lazy">{% endif %}
 </a>
 {% else %}
 <p class="empty">这一栏还没有文章。三十日课里已经排了位置，发布后会自动出现。</p>
