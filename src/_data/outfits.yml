@@ -752,3 +752,61 @@
       name: 切尔西靴
       color: 棕
       fit: 圆头，靴筒到踝
+- id: ow-27
+  title: 法兰绒叠酒红粗针
+  scene: 出游
+  style: 美式复古
+  season: 秋冬
+  colors: [浅卡其, 酒红, 卡其, 棕]
+  why: 181、72kg 穿薄衬衫胸口空，法兰绒加中粗针两层绒面把厚度做出来，不用放大一码；酒红和浅卡其都偏暖，黄皮脸色不发灰。
+  source: 本站自绘 SVG
+  image: /assets/images/outfits/ow-27.svg
+  photo_flat: /assets/outfits/ow-27-flat.jpg
+  photo_look: /assets/outfits/ow-27-look.jpg
+  photo_credit: AI 生成，本站自制
+  items:
+    - type: flannel
+      name: 法兰绒衬衫
+      color: 浅卡其
+      fit: 合肩，领口从针织里翻出
+    - type: crewneck
+      name: 中粗针圆领针织
+      color: 酒红
+      fit: 盖住腰带，不贴身
+    - type: chinos
+      name: 直筒裤
+      color: 卡其
+      fit: 斜纹厚棉，穿靴子试长度
+    - type: chelsea
+      name: 切尔西靴
+      color: 棕
+      fit: 绒面或光面，圆头
+- id: ow-28
+  title: 驼色羊毛夹克配奶白粗针
+  scene: 上班
+  style: 通勤商务休闲
+  season: 秋冬
+  colors: [驼, 奶白, 黑, 深棕]
+  why: 181 的上身长，羊毛夹克盖臀、呢面站得住，比薄西装外套更有分量；奶白粗针高领贴脸提亮黄皮，72kg 的胸口被针织填满。
+  source: 本站自绘 SVG
+  image: /assets/images/outfits/ow-28.svg
+  photo_flat: /assets/outfits/ow-28-flat.jpg
+  photo_look: /assets/outfits/ow-28-look.jpg
+  photo_credit: AI 生成，本站自制
+  items:
+    - type: jacket
+      name: 羊毛夹克
+      color: 驼
+      fit: 盖臀，羊毛 70% 以上，肩缝在肩骨
+    - type: turtleneck
+      name: 粗针高领
+      color: 奶白
+      fit: 领口立住，不透光
+    - type: trousers
+      name: 直筒西裤
+      color: 黑
+      fit: 羊毛混纺，有垂感，裤脚碰鞋面
+    - type: loafer
+      name: 乐福鞋
+      color: 深棕
+      fit: 光面皮，配深色袜
