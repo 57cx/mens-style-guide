@@ -1,7 +1,7 @@
 version: 1
 generated_for: 2026-11
 note: 下一篇是 status 不是 published 的最小 day。写完后把该天改成 published，填上 published_date（YYYY-MM-DD），并把 next_day 改成再下一篇的 day。站点也会自己计算 computed_next_day，两边必须一致。
-next_day: 3
+next_day: 4
 reader:
   height_cm: 181
   weight_kg: 72
@@ -47,8 +47,8 @@ days:
       高瘦怕轻飘的薄涤纶贴在身上。用羊毛大衣、法兰绒、中厚针织把视觉重量做出来。
       讲克重手感怎么摸，什么情况下混纺可以接受。
       颜色仍避开亮黄和发灰的绿，面料再厚也不能靠荧光色找存在感。
-    status: planned
-    published_date: null
+    status: published
+    published_date: "2026-11-14"
   - day: 4
     id: day-04-basics
     title: 基本单品：一件秋冬衣橱先留下哪几件
