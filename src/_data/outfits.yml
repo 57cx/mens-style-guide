@@ -810,3 +810,69 @@
       name: 乐福鞋
       color: 深棕
       fit: 光面皮，配深色袜
+- id: ow-29
+  title: 五件基本款的周末穿法
+  scene: 约会
+  style: 极简
+  season: 秋冬
+  colors: [藏青, 燕麦, 奶白, 靛蓝, 白]
+  why: 181 的上身长，过臀藏青大衣把腰线盖住、肩撑平；燕麦圆领叠奶白衬衫领贴在脸下，黄皮看着干净；裤子换直筒牛仔、鞋换白皮鞋，同一件大衣就成了周末。
+  source: 本站自绘 SVG
+  image: /assets/images/outfits/ow-29.svg
+  photo_flat: /assets/outfits/ow-29-flat.jpg
+  photo_look: /assets/outfits/ow-29-look.jpg
+  photo_credit: AI 生成，本站自制
+  items:
+    - type: overcoat
+      name: 羊毛大衣
+      color: 藏青
+      fit: 过臀到膝上，肩缝在肩骨
+    - type: shirt
+      name: 牛津纺衬衫
+      color: 奶白
+      fit: 领口从针织里露一指，袖长到腕骨
+    - type: crewneck
+      name: 中厚圆领针织
+      color: 燕麦
+      fit: 腰侧能进一拳，不贴身
+    - type: jeans
+      name: 直筒牛仔裤
+      color: 靛蓝
+      fit: 不浅漂、不破洞，大腿有余量
+    - type: sneaker
+      name: 低帮皮质运动鞋
+      color: 白
+      fit: 光面，鞋型简单
+- id: ow-30
+  title: 酒红圆领叠衬衫上班
+  scene: 上班
+  style: 通勤商务休闲
+  season: 秋冬
+  colors: [藏青, 酒红, 奶白, 卡其, 棕]
+  why: 基本款只换一件针织：酒红偏暖，比灰色更衬黄皮，奶白衬衫领隔开脸和深色；181、72kg 靠过臀大衣和直筒卡其裤拉出一条线，棕切尔西把脚下压住。
+  source: 本站自绘 SVG
+  image: /assets/images/outfits/ow-30.svg
+  photo_flat: /assets/outfits/ow-30-flat.jpg
+  photo_look: /assets/outfits/ow-30-look.jpg
+  photo_credit: AI 生成，本站自制
+  items:
+    - type: overcoat
+      name: 羊毛大衣
+      color: 藏青
+      fit: 过臀，肩缝在肩骨
+    - type: shirt
+      name: 牛津纺衬衫
+      color: 奶白
+      fit: 领子压在圆领下，袖口露一点
+    - type: crewneck
+      name: 圆领针织
+      color: 酒红
+      fit: 中厚，盖住腰带
+    - type: chinos
+      name: 直筒裤
+      color: 卡其
+      fit: 斜纹厚棉，裤脚碰靴面
+    - type: chelsea
+      name: 切尔西靴
+      color: 棕
+      fit: 圆头，靴筒到踝上一点
