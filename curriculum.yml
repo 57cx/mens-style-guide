@@ -1,7 +1,7 @@
 version: 1
 generated_for: 2026-11
 note: 下一篇是 status 不是 published 的最小 day。写完后把该天改成 published，填上 published_date（YYYY-MM-DD），并把 next_day 改成再下一篇的 day。站点也会自己计算 computed_next_day，两边必须一致。
-next_day: 4
+next_day: 5
 reader:
   height_cm: 181
   weight_kg: 72
@@ -60,8 +60,8 @@ days:
       把外套、针织、衬衫、裤子、鞋收成一份最短清单，服务 181/72 的秋冬。
       每件只讲它在比例里的工作：谁负责肩，谁负责长度，谁负责靠近脸的颜色。
       和后面的胶囊衣橱区分开：这一篇讲单品是什么，不讲预算和套数。
-    status: planned
-    published_date: null
+    status: published
+    published_date: "2026-11-15"
   - day: 5
     id: day-05-outerwear
     title: 外套的肩线和衣长：大衣、夹克、羽绒
