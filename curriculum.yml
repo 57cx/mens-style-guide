@@ -1,7 +1,7 @@
 version: 1
 generated_for: 2026-11
 note: 下一篇是 status 不是 published 的最小 day。写完后把该天改成 published，填上 published_date（YYYY-MM-DD），并把 next_day 改成再下一篇的 day。站点也会自己计算 computed_next_day，两边必须一致。
-next_day: 5
+next_day: 6
 reader:
   height_cm: 181
   weight_kg: 72
@@ -73,8 +73,8 @@ days:
       专门比较过膝大衣、盖臀夹克和短羽绒。短款为什么会切在 181 最细的腰上。
       羽绒怎么选才不像球：直筒、过臀，肩不要滑下去。
       用藏青、驼、橄榄举例，不把灰色羽绒贴在脸上。
-    status: planned
-    published_date: null
+    status: published
+    published_date: "2026-11-16"
   - day: 6
     id: day-06-layers
     title: 叠穿：加厚，但不在细腰上堆衣服

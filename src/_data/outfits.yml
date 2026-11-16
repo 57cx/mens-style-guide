@@ -876,3 +876,61 @@
       name: 切尔西靴
       color: 棕
       fit: 圆头，靴筒到踝上一点
+- id: ow-31
+  title: 盖臀橄榄夹克配酒红针织
+  scene: 出游
+  style: 美式复古
+  season: 秋冬
+  colors: [橄榄绿, 酒红, 靛蓝, 棕]
+  why: 181 的上身长，夹克盖住臀部才不会切在细腰上；橄榄选偏棕的，不贴脸，贴脸的是暖调酒红，黄皮看着有气色；直筒牛仔压在工装靴上，72kg 的细腿也有分量。
+  source: 本站自绘 SVG
+  image: /assets/images/outfits/ow-31.svg
+  photo_flat: /assets/outfits/ow-31-flat.jpg
+  photo_look: /assets/outfits/ow-31-look.jpg
+  photo_credit: AI 生成，本站自制
+  items:
+    - type: field-jacket
+      name: 工装夹克
+      color: 橄榄绿
+      fit: 盖住臀部，肩缝在肩骨，偏棕不发灰
+    - type: crewneck
+      name: 中厚圆领针织
+      color: 酒红
+      fit: 腰侧能进一拳，下摆藏在夹克里
+    - type: jeans
+      name: 直筒牛仔裤
+      color: 靛蓝
+      fit: 深色不浅漂，裤脚压在靴面
+    - type: boot
+      name: 工装靴
+      color: 棕
+      fit: 圆头厚底，靴筒到踝上
+- id: ow-32
+  title: 藏青过臀羽绒配燕麦高领
+  scene: 上班
+  style: 极简
+  season: 秋冬
+  colors: [藏青, 燕麦, 卡其, 棕]
+  why: 直筒过臀的羽绒把 181 的上身整片盖住，不像短款面包服那样把人吹成球；藏青代替灰色，燕麦高领垫在领口，黄皮在冬天也不发暗；卡其直筒裤和切尔西把下半身接上。
+  source: 本站自绘 SVG
+  image: /assets/images/outfits/ow-32.svg
+  photo_flat: /assets/outfits/ow-32-flat.jpg
+  photo_look: /assets/outfits/ow-32-look.jpg
+  photo_credit: AI 生成，本站自制
+  items:
+    - type: down-jacket
+      name: 直筒羽绒服
+      color: 藏青
+      fit: 过臀，绗线细密，肩不下滑
+    - type: turtleneck
+      name: 中厚高领针织
+      color: 燕麦
+      fit: 领口贴颈不勒，袖口不外露太多
+    - type: chinos
+      name: 直筒裤
+      color: 卡其
+      fit: 斜纹厚棉，裤脚碰靴面
+    - type: chelsea
+      name: 切尔西靴
+      color: 棕
+      fit: 圆头，靴筒到踝上一点
