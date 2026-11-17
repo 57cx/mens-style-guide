@@ -1,7 +1,7 @@
 version: 1
 generated_for: 2026-11
 note: 下一篇是 status 不是 published 的最小 day。写完后把该天改成 published，填上 published_date（YYYY-MM-DD），并把 next_day 改成再下一篇的 day。站点也会自己计算 computed_next_day，两边必须一致。
-next_day: 6
+next_day: 7
 reader:
   height_cm: 181
   weight_kg: 72
@@ -86,8 +86,8 @@ days:
       两层和三层怎么留空气。空气保暖，也让 72kg 看起来有厚度。
       内层收、外层直，避免每一件都宽松。
       举一套从室内到室外的脱法，颜色不超过三个，靠近脸用燕麦或奶白。
-    status: planned
-    published_date: null
+    status: published
+    published_date: "2026-11-17"
   - day: 7
     id: day-07-colors-yes
     title: 黄皮秋冬的颜色：藏青、燕麦、卡其、酒红、橄榄、奶白

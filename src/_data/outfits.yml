@@ -934,3 +934,65 @@
       name: 切尔西靴
       color: 棕
       fit: 圆头，靴筒到踝上一点
+- id: ow-33
+  title: 三层通勤：大衣、背心、奶白衬衫
+  scene: 上班
+  style: 通勤商务休闲
+  season: 秋冬
+  colors: [藏青, 燕麦, 奶白, 棕]
+  why: 181 的上身长又薄，衬衫、背心、大衣三层给出厚度；里面收、外面直，大衣过臀把几层下摆都盖住，腰上不鼓；奶白领口贴脸，黄皮不发暗，进门脱掉大衣也是完整的一套。
+  source: 本站自绘 SVG
+  image: /assets/images/outfits/ow-33.svg
+  photo_flat: /assets/outfits/ow-33-flat.jpg
+  photo_look: /assets/outfits/ow-33-look.jpg
+  photo_credit: AI 生成，本站自制
+  items:
+    - type: overcoat
+      name: 羊毛大衣
+      color: 藏青
+      fit: 过臀到膝上，扣上不勒中层
+    - type: sweater-vest
+      name: 针织背心
+      color: 燕麦
+      fit: 中厚，下摆到腰带，腰侧能进一拳
+    - type: shirt
+      name: 牛津衬衫
+      color: 奶白
+      fit: 塞进裤子，领口压在背心外
+    - type: trousers
+      name: 直筒西裤
+      color: 藏青
+      fit: 裤管留空气，裤脚碰鞋面
+    - type: loafer
+      name: 乐福鞋
+      color: 棕
+      fit: 圆头，配深色袜
+- id: ow-34
+  title: 羽绒马甲叠燕麦高领
+  scene: 出游
+  style: 极简
+  season: 秋冬
+  colors: [藏青, 燕麦, 卡其, 白]
+  why: 马甲只给躯干加厚，72kg 的胳膊不臃肿，181 的上身有了分量又不像球；马甲比高领长、盖过腰带，腰上只有一条线；燕麦高领贴脸，黄皮显亮，全身停在三个颜色。
+  source: 本站自绘 SVG
+  image: /assets/images/outfits/ow-34.svg
+  photo_flat: /assets/outfits/ow-34-flat.jpg
+  photo_look: /assets/outfits/ow-34-look.jpg
+  photo_credit: AI 生成，本站自制
+  items:
+    - type: vest
+      name: 羽绒马甲
+      color: 藏青
+      fit: 到腰带下一掌，细绗线，不鼓包
+    - type: turtleneck
+      name: 中厚高领针织
+      color: 燕麦
+      fit: 贴身不紧，下摆比马甲短
+    - type: chinos
+      name: 直筒裤
+      color: 卡其
+      fit: 斜纹厚棉，裤脚碰鞋面
+    - type: sneaker
+      name: 运动鞋
+      color: 白
+      fit: 低帮，干净不厚底
