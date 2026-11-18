@@ -1,7 +1,7 @@
 version: 1
 generated_for: 2026-11
 note: 下一篇是 status 不是 published 的最小 day。写完后把该天改成 published，填上 published_date（YYYY-MM-DD），并把 next_day 改成再下一篇的 day。站点也会自己计算 computed_next_day，两边必须一致。
-next_day: 7
+next_day: 8
 reader:
   height_cm: 181
   weight_kg: 72
@@ -99,8 +99,8 @@ days:
       逐个讲这六个颜色放在哪一层。藏青和橄榄适合外套，燕麦和奶白适合领口。
       酒红可以，但只做内搭或围巾。
       每色都对着偏黄的肤色说它为什么干净，不写通用色彩理论。
-    status: planned
-    published_date: null
+    status: published
+    published_date: "2026-11-18"
   - day: 8
     id: day-08-colors-no
     title: 会把脸穿黄的颜色：荧光、亮黄、发灰的绿
