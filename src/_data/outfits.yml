@@ -1058,3 +1058,61 @@
       name: 切尔西靴
       color: 棕
       fit: 圆头，靴筒到踝上一点
+- id: ow-37
+  title: 奶白高领把脸托亮
+  scene: 上班
+  style: 极简
+  season: 秋冬
+  colors: [藏青, 奶白, 卡其, 棕]
+  why: 181 要用过臀的藏青大衣把瘦高骨架压住；奶白高领贴着黄皮，脸色干净，不会像亮黄那样把脸比脏；卡其直筒把整套提亮，又不会用到荧光。
+  source: 本站自绘 SVG
+  image: /assets/images/outfits/ow-37.svg
+  photo_flat: /assets/outfits/ow-37-flat.jpg
+  photo_look: /assets/outfits/ow-37-look.jpg
+  photo_credit: AI 生成，本站自制
+  items:
+    - type: overcoat
+      name: 羊毛大衣
+      color: 藏青
+      fit: 过臀到膝上，肩缝在肩骨，可以微敞
+    - type: turtleneck
+      name: 中厚高领针织
+      color: 奶白
+      fit: 贴身不紧，领口贴脸，下摆比大衣短
+    - type: chinos
+      name: 直筒裤
+      color: 卡其
+      fit: 浅沙色斜纹厚棉，裤脚碰靴面
+    - type: chelsea
+      name: 切尔西靴
+      color: 棕
+      fit: 圆头，靴筒到踝上一点
+- id: ow-38
+  title: 卡其夹克代替荧光外套
+  scene: 出游
+  style: 日系
+  season: 秋冬
+  colors: [卡其, 奶白, 藏青, 棕]
+  why: 想把秋冬穿亮，181 用卡其夹克提亮就够，不要荧光黄绿外套；奶白圆领贴着黄皮，脸色干净；藏青直筒把腿放开，也把颜色压住。
+  source: 本站自绘 SVG
+  image: /assets/images/outfits/ow-38.svg
+  photo_flat: /assets/outfits/ow-38-flat.jpg
+  photo_look: /assets/outfits/ow-38-look.jpg
+  photo_credit: AI 生成，本站自制
+  items:
+    - type: jacket
+      name: 羊毛夹克
+      color: 卡其
+      fit: 衣摆盖过腰袋，肩缝在肩骨，浅沙色不偏绿
+    - type: crewneck
+      name: 中厚圆领针织
+      color: 奶白
+      fit: 贴身不紧，领口贴脸，下摆比夹克短
+    - type: trousers
+      name: 直筒裤
+      color: 藏青
+      fit: 中厚，裤脚碰靴面，不要修身
+    - type: chelsea
+      name: 切尔西靴
+      color: 棕
+      fit: 圆头，靴筒到踝上一点

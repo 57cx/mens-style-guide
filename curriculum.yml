@@ -1,7 +1,7 @@
 version: 1
 generated_for: 2026-11
 note: 下一篇是 status 不是 published 的最小 day。写完后把该天改成 published，填上 published_date（YYYY-MM-DD），并把 next_day 改成再下一篇的 day。站点也会自己计算 computed_next_day，两边必须一致。
-next_day: 8
+next_day: 9
 reader:
   height_cm: 181
   weight_kg: 72
@@ -112,8 +112,8 @@ days:
       亮黄、荧光黄绿、发灰的薄荷绿靠近脸时，暖黄肤色会发脏或发青。
       区分橄榄绿和灰绿：带棕的橄榄可以，粉灰的绿不行。
       给出替换：想要亮，就用奶白和卡其，不要用荧光。
-    status: planned
-    published_date: null
+    status: published
+    published_date: "2026-11-19"
   - day: 9
     id: day-09-three-colors
     title: 三色原则：一套衣服停在三个颜色
