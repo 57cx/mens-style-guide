@@ -1,7 +1,7 @@
 version: 1
 generated_for: 2026-11
 note: 下一篇是 status 不是 published 的最小 day。写完后把该天改成 published，填上 published_date（YYYY-MM-DD），并把 next_day 改成再下一篇的 day。站点也会自己计算 computed_next_day，两边必须一致。
-next_day: 9
+next_day: 10
 reader:
   height_cm: 181
   weight_kg: 72
@@ -125,8 +125,8 @@ days:
       一套里数颜色的方法：鞋和皮带算不算，图案怎么数。
       181 的身高已经很长，颜色再碎，人就散。
       用一套失败的四色和一套藏青、燕麦、棕的三色做对比。
-    status: planned
-    published_date: null
+    status: published
+    published_date: "2026-11-20"
   - day: 10
     id: day-10-neutrals
     title: 主色怎么铺：燕麦、奶白、卡其当大面积
