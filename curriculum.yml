@@ -1,7 +1,7 @@
 version: 1
 generated_for: 2026-11
 note: 下一篇是 status 不是 published 的最小 day。写完后把该天改成 published，填上 published_date（YYYY-MM-DD），并把 next_day 改成再下一篇的 day。站点也会自己计算 computed_next_day，两边必须一致。
-next_day: 10
+next_day: 11
 reader:
   height_cm: 181
   weight_kg: 72
@@ -138,8 +138,8 @@ days:
       大面积用低对比的暖中性色，让黄皮有光，又不像没穿衣服。
       同色从上到下可以强调 181 的身高，但脚上要有深一点的鞋压住。
       纯白和燕麦的差别：死白容易显脸黄，奶白和燕麦更稳。
-    status: planned
-    published_date: null
+    status: published
+    published_date: "2026-11-21"
   - day: 11
     id: day-11-accents
     title: 点缀色怎么放：酒红和橄榄只出现一次
