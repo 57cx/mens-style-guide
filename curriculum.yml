@@ -1,7 +1,7 @@
 version: 1
 generated_for: 2026-11
 note: 下一篇是 status 不是 published 的最小 day。写完后把该天改成 published，填上 published_date（YYYY-MM-DD），并把 next_day 改成再下一篇的 day。站点也会自己计算 computed_next_day，两边必须一致。
-next_day: 11
+next_day: 12
 reader:
   height_cm: 181
   weight_kg: 72
@@ -151,8 +151,8 @@ days:
       点缀只留在一件内搭、一条围巾或一双袜子，不要全身酒红。
       橄榄做外套可以，做贴脸 T 恤要看它偏棕还是偏灰。
       给 181/72 一套「一件点缀色 + 两件中性色」的公式。
-    status: planned
-    published_date: null
+    status: published
+    published_date: "2026-11-22"
   - day: 12
     id: day-12-japanese
     title: 日系秋冬：松在身上，肩还在原处
