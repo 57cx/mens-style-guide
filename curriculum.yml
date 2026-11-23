@@ -1,7 +1,7 @@
 version: 1
 generated_for: 2026-11
 note: 下一篇是 status 不是 published 的最小 day。写完后把该天改成 published，填上 published_date（YYYY-MM-DD），并把 next_day 改成再下一篇的 day。站点也会自己计算 computed_next_day，两边必须一致。
-next_day: 12
+next_day: 13
 reader:
   height_cm: 181
   weight_kg: 72
@@ -164,8 +164,8 @@ days:
       日系的宽松用在衣身，不用在肩。滑肩会把 181 的肩宽穿没。
       核心单品：衬衫、针织背心、直筒偏宽的裤子、乐福。
       颜色用燕麦、藏青、卡其，避免发白的浅色把腿削得更细。
-    status: planned
-    published_date: null
+    status: published
+    published_date: "2026-11-23"
   - day: 13
     id: day-13-amekaji
     title: 美式复古：丹宁、格子衬衫、工装靴

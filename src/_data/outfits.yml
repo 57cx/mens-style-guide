@@ -1290,3 +1290,69 @@
       name: 切尔西靴
       color: 棕
       fit: 圆头，靴筒到踝上一点，比卡其深一档
+- id: ow-45
+  title: 驼色夹克出门，室内是衬衫背心乐福
+  scene: 出游
+  style: 日系
+  season: 秋冬
+  colors: [驼, 藏青, 燕麦, 卡其, 棕]
+  why: 181 用盖臀的驼色夹克把瘦高骨架压住，肩缝仍在肩骨上；藏青衬衫贴着黄皮干净，燕麦背心给 72kg 补一层厚度；偏宽卡其直筒不削腿，进门脱掉夹克，里面仍是衬衫、背心和乐福。
+  source: 本站自绘 SVG
+  image: /assets/images/outfits/ow-45.svg
+  photo_flat: /assets/outfits/ow-45-flat.jpg
+  photo_look: /assets/outfits/ow-45-look.jpg
+  photo_credit: AI 生成，本站自制
+  items:
+    - type: jacket
+      name: 羊毛夹克
+      color: 驼
+      fit: 盖臀不到膝，肩缝在肩骨，浅暖驼色，可以微敞，不是过膝长大衣
+    - type: shirt
+      name: 牛津衬衫
+      color: 藏青
+      fit: 衣身松，肩只松一指，可塞衣角，不是滑肩宽版
+    - type: sweater-vest
+      name: 针织背心
+      color: 燕麦
+      fit: 中厚，V 领或圆领，下摆到腰带，腰侧能进一拳
+    - type: chinos
+      name: 直筒偏宽裤
+      color: 卡其
+      fit: 浅沙色斜纹棉，直筒偏宽，裤管留空气，不要修身，不要发白
+    - type: loafer
+      name: 乐福鞋
+      color: 棕
+      fit: 圆头，中低跟，室内配中厚袜
+- id: ow-46
+  title: 燕麦夹克压肩，藏青偏宽裤不削腿
+  scene: 约会
+  style: 日系
+  season: 秋冬
+  colors: [燕麦, 奶白, 藏青, 棕]
+  why: 燕麦盖臀夹克肩缝落在 181 的肩骨上，衣身仍然宽松；奶白衬衫贴着黄皮有光；藏青背心和偏宽藏青直筒把人压住，腿旁边有空气，不会被发白浅色削细。
+  source: 本站自绘 SVG
+  image: /assets/images/outfits/ow-46.svg
+  photo_flat: /assets/outfits/ow-46-flat.jpg
+  photo_look: /assets/outfits/ow-46-look.jpg
+  photo_credit: AI 生成，本站自制
+  items:
+    - type: jacket
+      name: 羊毛夹克
+      color: 燕麦
+      fit: 盖臀不到膝，肩缝在肩骨，暖浅米不是灰白，可以微敞，不是过膝长大衣
+    - type: shirt
+      name: 牛津衬衫
+      color: 奶白
+      fit: 衣身松，肩只松一指，领口露出一点，袖长到腕骨
+    - type: sweater-vest
+      name: 针织背心
+      color: 藏青
+      fit: 中厚，V 领或圆领，下摆到腰带，盖住塞进裤腰的衬衫
+    - type: trousers
+      name: 直筒偏宽裤
+      color: 藏青
+      fit: 中厚，直筒偏宽，裤管留空气，不要修身，不要发白浅色
+    - type: loafer
+      name: 乐福鞋
+      color: 棕
+      fit: 圆头，中低跟，室内配中厚袜
