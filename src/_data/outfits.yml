@@ -1356,3 +1356,61 @@
       name: 乐福鞋
       color: 棕
       fit: 圆头，中低跟，室内配中厚袜
+- id: ow-47
+  title: 丹宁夹克盖过腰袋，工装靴接住裤脚
+  scene: 出游
+  style: 美式复古
+  season: 秋冬
+  colors: [靛蓝, 浅卡其, 棕]
+  why: 丹宁和法兰绒的硬挺补上 72kg 偏薄的胸口，夹克衣摆盖过腰袋，才撑得起 181 的上身长；浅卡其格纹贴着黄皮干净，不要亮黄格；靛蓝直筒裤压在棕色工装靴上，细腿也有分量。暖气房和楼与楼之间可以这样穿。
+  source: 本站自绘 SVG
+  image: /assets/images/outfits/ow-47.svg
+  photo_flat: /assets/outfits/ow-47-flat.jpg
+  photo_look: /assets/outfits/ow-47-look.jpg
+  photo_credit: AI 生成，本站自制
+  items:
+    - type: denim-jacket
+      name: 丹宁夹克
+      color: 靛蓝
+      fit: 衣摆盖过腰袋，接近臀线，肩只松一指，中等靛蓝，不是短款，不是浅漂
+    - type: flannel
+      name: 法兰绒衬衫
+      color: 浅卡其
+      fit: 中厚刷毛，浅卡其暖调小格，不要亮黄格，领口从夹克里露出，可塞可不塞
+    - type: jeans
+      name: 直筒牛仔裤
+      color: 靛蓝
+      fit: 深靛蓝直筒，腿旁边留空气，不要浅漂，不要修身，裤脚压在靴面上
+    - type: boot
+      name: 工装靴
+      color: 棕
+      fit: 中暖棕色圆头皮靴，靴筒到踝上，接住裤脚，不是切尔西，不是运动鞋
+- id: ow-48
+  title: 藏青大衣出门，浅卡其格纹仍贴脸
+  scene: 约会
+  style: 美式复古
+  season: 秋冬
+  colors: [藏青, 浅卡其, 靛蓝, 棕]
+  why: 长春 11 月底不能只靠丹宁夹克出门，181 用藏青过臀大衣把瘦高骨架压住，肩缝仍在肩骨上；贴脸的仍是浅卡其法兰绒，黄皮不会被大衣压暗，也不会被亮黄格打脏；靛蓝直筒压在工装靴上，72kg 的腿有体积。
+  source: 本站自绘 SVG
+  image: /assets/images/outfits/ow-48.svg
+  photo_flat: /assets/outfits/ow-48-flat.jpg
+  photo_look: /assets/outfits/ow-48-look.jpg
+  photo_credit: AI 生成，本站自制
+  items:
+    - type: overcoat
+      name: 羊毛大衣
+      color: 藏青
+      fit: 过臀不到膝，单排两到三颗扣，驳领，可以微敞露出法兰绒领，肩缝在肩骨，不是过膝长大衣
+    - type: flannel
+      name: 法兰绒衬衫
+      color: 浅卡其
+      fit: 中厚刷毛，浅卡其暖调小格，不要亮黄格，领口从大衣里露出
+    - type: jeans
+      name: 直筒牛仔裤
+      color: 靛蓝
+      fit: 深靛蓝直筒，不要浅漂，不要修身，裤脚压在靴面上
+    - type: boot
+      name: 工装靴
+      color: 棕
+      fit: 中暖棕色圆头皮靴，靴筒到踝上，接住裤脚，不是切尔西，不是运动鞋

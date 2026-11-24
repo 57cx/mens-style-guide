@@ -1,7 +1,7 @@
 version: 1
 generated_for: 2026-11
 note: 下一篇是 status 不是 published 的最小 day。写完后把该天改成 published，填上 published_date（YYYY-MM-DD），并把 next_day 改成再下一篇的 day。站点也会自己计算 computed_next_day，两边必须一致。
-next_day: 13
+next_day: 14
 reader:
   height_cm: 181
   weight_kg: 72
@@ -177,8 +177,8 @@ days:
       丹宁和法兰绒的硬挺正好补上 72kg 偏薄的胸口。
       夹克衣摆要盖过腰袋，裤管直筒，不要浅漂牛仔裤。
       工装靴接住裤脚，黄皮靠近脸用浅卡其格纹，不用亮黄格。
-    status: planned
-    published_date: null
+    status: published
+    published_date: "2026-11-24"
   - day: 14
     id: day-14-smart
     title: 通勤商务休闲：没有整套西装的上班法
